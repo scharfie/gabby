@@ -3,10 +3,65 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>application.html</title>
   <%= javascript_include_tag 'prototype', :juggernaut %>
+  <style type="text/css" media="screen">
+    body {
+      background: #e5e5e5;
+      font: normal 76% Lucida Grande;
+    }
+    
+    #chatwindow { width: 550px; padding: 25px; background: #fff;}
+    #chatbox { height: 50px; margin-top: 10px;}
+    
+    
+    #chat td {
+      xpadding: 4px;
+    }
+    
+    td {
+      background: #fff;
+      color: #333;
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+    }
+    
+    tr.new_speaker td {
+      border-top: dotted 1px #ccc;
+    }
+    
+    pre {
+      background: #eee;
+      padding: 10px;
+      margin-right: 15px;
+      border: dotted 1px #777;
+    }
+    
+    table {
+      border-collapse: collapse;
+      border: 0;
+      width: 100%;
+    }
+    
+    td.from {
+      border-right: solid 1px #ccc; 
+      padding: 5px 15px 5px 5px;
+      width: 80px;
+    }
+    
+    td.from div {
+      text-align: right;
+      font-weight: bold;
+    }
+    
+    td.message {
+      padding-left: 15px;
+    }
+  </style>
 </head>
 <body>
 <div id="container">
-  <%= juggernaut %>  
+  <%= yield %>
+    
 </div>  
 </body>
 </html>

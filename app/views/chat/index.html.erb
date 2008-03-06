@@ -1,0 +1,23 @@
+<%= juggernaut(:client_id => session[:user_id] || 31) %>
+<div id="chatwindow">
+  <table id="chat">
+    <%= previous_messages %>
+  </table>
+</div>
+
+<div id="chatbox">
+  <%= form_remote_tag(
+        :url => { :action => :new },
+        :complete => "$('message').value = ''" ) %>
+    <%= text_area_tag( 'message', '', { :id => 'message'} ) %>
+    <%= text_field_tag 'previous_speaker', params[:previous_speaker] %>
+    <%= text_field_tag 'from', 'Chris S.' %>
+    <%= submit_tag "Add" %>
+  </form>
+</div>  
+
+<script type="text/javascript" charset="utf-8">
+  Event.observe($('message'), 'keydown', function(e) {
+    if (e.keyCode == 13 && e.shiftKey == false) $('message').form.onsubmit();
+  });
+</script>

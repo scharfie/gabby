@@ -1,0 +1,7 @@
+:hosts:
+  - :port: 5001
+    :host: 127.0.0.1
+    :environment: :development
+
+:allowed_ips: 
+    - 127.0.0.1
