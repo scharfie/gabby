@@ -3,7 +3,7 @@ class ChatController < ApplicationController
   end
 	
   def new
-    @message = current_user.messages.new(:message => params[:message])
+    @message = current_user.messages.create!(:message => params[:message])
     
     render :juggernaut do |page|
       page.insert_html :bottom, 'chat', :partial => 'message'

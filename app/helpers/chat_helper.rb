@@ -21,6 +21,6 @@ module ChatHelper
   end
   
   def new_speaker?(message)
-    params[:previous_speaker] != message.user_id
+    params[:previous_speaker].try(:to_i) != message.user_id
   end
 end

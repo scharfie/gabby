@@ -1,4 +1,11 @@
 <tr class="<%= 'new_speaker' if new_speaker?(message) %>">
-  <td class="from"><div><%= message.from %></div></td>
-  <td class="message"><div><%= message_html message.message %></div></td>
+  <td class="from"><div class="from"><%= message.from %></div></td>
+  <td class="message">
+    <div class="message"><%= message_html message.message %></div>
+  </td>
+  <td class="time">
+    <div class="time">
+      <%= message.created_on.eztime ':hour12::minute :lmeridian' %>
+    </div>
+  </td>  
 </tr>
