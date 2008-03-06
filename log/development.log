@@ -1969,3 +1969,84 @@ Processing ChatController#new (for 127.0.0.1 at 2008-03-06 12:26:02) [POST]
   Parameters: {"message"=>"good then", "commit"=>"Add", "previous_speaker"=>"chris s.", "from"=>"chris s.", "authenticity_token"=>"22bada2b16dc9f7c8409ff36dd475ffe130d74e7", "action"=>"new", "controller"=>"chat"}
 Rendered chat/_message (0.00034)
 Completed in 0.01130 (88 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 16:07:11) [GET]
+  Session ID: bb1f68d5d102581b3bffc34fe472f9e7
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Rendering template within layouts/application
+Rendering chat/index
+Rendered chat/_message (0.00087)
+Rendered chat/_message (0.00022)
+Rendered chat/_message (0.00022)
+Rendered chat/_message (0.00015)
+Rendered chat/_message (0.00015)
+Rendered chat/_message (0.00016)
+Completed in 0.01255 (79 reqs/sec) | Rendering: 0.00952 (75%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:07:25) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNiNGVlN2NhNDdlNzk2%0AMTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--6da54fc1f0f8e1aa1097f453c26882aed2f5bc71
+  Parameters: {"message"=>"Hey, nice :-)", "commit"=>"Add", "previous_speaker"=>"Chris S.", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+Rendered chat/_message (0.00021)
+Completed in 0.00789 (126 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:07:30) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNiNGVlN2NhNDdlNzk2%0AMTI6DHVzZXJfaWRpAa8iCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs%0AYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--bdec29b06ef3d7cb4767bb697f4cd9b58749b94d
+  Parameters: {"message"=>"please, be nice!!", "commit"=>"Add", "previous_speaker"=>"Chris S.", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+Rendered chat/_message (0.00021)
+Completed in 0.00751 (133 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:07:34) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNiNGVlN2NhNDdlNzk2%0AMTI6DHVzZXJfaWRpAa8iCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs%0AYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--bdec29b06ef3d7cb4767bb697f4cd9b58749b94d
+  Parameters: {"message"=>"what\never", "commit"=>"Add", "previous_speaker"=>"Chris S.", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+Rendered chat/_message (0.00021)
+Completed in 0.00796 (125 reqs/sec) | Rendering: 0.00014 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:08:19) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNiNGVlN2NhNDdlNzk2%0AMTI6DHVzZXJfaWRpAa8iCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs%0AYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--bdec29b06ef3d7cb4767bb697f4cd9b58749b94d
+  Parameters: {"message"=>"", "commit"=>"Add", "previous_speaker"=>"Chris S.", "from"=>"Dave O.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+Rendered chat/_message (0.00022)
+Completed in 0.00785 (127 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:08:26) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNiNGVlN2NhNDdlNzk2%0AMTI6DHVzZXJfaWRpAa8iCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs%0AYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--bdec29b06ef3d7cb4767bb697f4cd9b58749b94d
+  Parameters: {"message"=>"what is going on here", "commit"=>"Add", "previous_speaker"=>"Dave O.", "from"=>"Dave O.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+Rendered chat/_message (0.00021)
+Completed in 0.00807 (123 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 16:08:35) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNiNGVlN2NhNDdlNzk2%0AMTI6DHVzZXJfaWRpAa8iCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZs%0AYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--bdec29b06ef3d7cb4767bb697f4cd9b58749b94d
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Rendering template within layouts/application
+Rendering chat/index
+Rendered chat/_message (0.00017)
+Rendered chat/_message (0.00016)
+Rendered chat/_message (0.00015)
+Rendered chat/_message (0.00015)
+Rendered chat/_message (0.00015)
+Rendered chat/_message (0.00015)
+Completed in 0.00619 (161 reqs/sec) | Rendering: 0.00387 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.000231)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.002169)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.001450)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to InitialSchema (1)
+  [4;35;1mSQL (0.000290)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001670)[0m   [0;1mCREATE TABLE messages ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer DEFAULT NULL, "message" text DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003653)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000332)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000074)[0m   [0;1mPRAGMA index_list(messages)[0m
