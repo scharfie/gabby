@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>application.html</title>
+  <title>gabby</title>
   <%= javascript_include_tag 'prototype', :juggernaut %>
   <style type="text/css" media="screen">
     body {
@@ -46,22 +46,41 @@
       border-right: solid 1px #ccc; 
       padding: 5px 15px 5px 5px;
       width: 80px;
+      text-align: right;
     }
     
     td.from div.from {
-      text-align: right;
       font-weight: bold;
     }
     
     td.message {
       padding-left: 15px;
     }
+    
+    td.time {
+      width: 50px;
+    }
+    
+    div.time {
+      font-size: 9px;
+      color: #777;
+    }
+
+    tr.sysmsg td.message {
+      background: #eee;
+      text-align: center;
+      font-weight: bold;
+    }
+    
   </style>
 </head>
 <body>
 <div id="container">
   <div id="header">
-    <%= 'Logged in as: ' + current_user.login if logged_in? %>
+    <% if logged_in? %>
+      Logged in as: <%= current_user.login  %>
+      <%= link_to 'Logout', logout_url %>
+    <% end %>
   </div>  
   <div id="body">
     <%= yield %>

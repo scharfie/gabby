@@ -1,11 +1,15 @@
-<tr class="<%= 'new_speaker' if new_speaker?(message) %>">
-  <td class="from"><div class="from"><%= message.from %></div></td>
+<tr class="<%= new_speaker?(message) ? 'new_speaker' : nil %>">
+  <td class="from">
+    <div class="from"><%= message.from %></div>
+  </td>
   <td class="message">
     <div class="message"><%= message_html message.message %></div>
   </td>
   <td class="time">
+    <% if new_speaker?(message) %>
     <div class="time">
-      <%= message.created_on.eztime ':hour12::minute :lmeridian' %>
+      <%= message.created_on.eztime(chat_time_format) %>
     </div>
-  </td>  
+    <% end %>
+  </td>
 </tr>

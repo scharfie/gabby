@@ -12,4 +12,17 @@ class ChatController < ApplicationController
     
     render :nothing => true
   end
+  
+  def login
+    
+    render :nothing => true
+  end
+
+  def logout
+    render :juggernaut do |page|
+      page.call :alert, "User logged out (#{current_user.login})"
+    end
+    
+    render :nothing => true
+  end
 end

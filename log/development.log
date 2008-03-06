@@ -3661,3 +3661,1904 @@ Rendered chat/_message (0.00038)
   [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
 Rendered chat/_message (0.00066)
 Completed in 0.02885 (34 reqs/sec) | Rendering: 0.01465 (50%) | DB: 0.00435 (15%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 16:53:41) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000419)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001051)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000402)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00469)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00055)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+Completed in 0.03082 (32 reqs/sec) | Rendering: 0.01652 (53%) | DB: 0.00187 (6%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:53:52) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"message"=>"i don't understand", "commit"=>"Add", "previous_speaker"=>"1", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000353)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000427)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 16:53:52', 'i don''t understand', '2008-03-06 16:53:52', 1)[0m
+  [4;36;1mUser Load (0.000435)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00234)
+Completed in 0.09135 (10 reqs/sec) | Rendering: 0.00014 (0%) | DB: 0.00121 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:54:02) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"message"=>"nobody is here :-(", "commit"=>"Add", "previous_speaker"=>"1", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000362)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000373)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 16:54:02', 'nobody is here :-(', '2008-03-06 16:54:02', 1)[0m
+  [4;35;1mUser Load (0.000562)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00304)
+Completed in 0.05942 (16 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00130 (2%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 16:54:11) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvIg4vY2hhdC9uZXc6DGNzcmZfaWQiJTdkYWM0MmY0%0AYmFhZjQ3NjU2ZTU2M2I4MmQ4MzcwNjgyOgx1c2VyX2lkMCIKZmxhc2hJQzon%0AQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7%0AAA%3D%3D--98b2fa7446cc72ce81085d462f24b965250bcff0
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x1930e6c @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00059 (1695 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 16:54:12) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiU3ZGFjNDJmNGJhYWY0NzY1%0ANmU1NjNiODJkODM3MDY4MjoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNv%0AbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--9bc452c203b85f8eade18b6549e45513a3360357
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00446 (224 reqs/sec) | Rendering: 0.00240 (53%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2008-03-06 16:54:16) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiU3ZGFjNDJmNGJhYWY0NzY1%0ANmU1NjNiODJkODM3MDY4MjoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNv%0AbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--9bc452c203b85f8eade18b6549e45513a3360357
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 0.00643 (155 reqs/sec) | Rendering: 0.00429 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2008-03-06 16:54:38) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiU3ZGFjNDJmNGJhYWY0NzY1%0ANmU1NjNiODJkODM3MDY4MjoMdXNlcl9pZDAiCmZsYXNoSUM6J0FjdGlvbkNv%0AbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA%3D--9bc452c203b85f8eade18b6549e45513a3360357
+  Parameters: {"user"=>{"password_confirmation"=>"dmolsen", "first_name"=>"David", "login"=>"dmolsen", "last_name"=>"Olsen", "password"=>"dmolsen", "email"=>"none"}, "commit"=>"Sign up", "authenticity_token"=>"2b0f89e94fbbf073a49c725dc09f49d89855d96d", "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+WARNING: Can't mass-assign these protected attributes: first_name, last_name
+  [4;36;1mUser Load (0.000164)[0m   [0;1mSELECT * FROM users WHERE (LOWER(users.login) = 'dmolsen') LIMIT 1[0m
+  [4;35;1mUser Load (0.000100)[0m   [0mSELECT * FROM users WHERE (LOWER(users.email) = 'none') LIMIT 1[0m
+  [4;36;1mUser Create (0.000342)[0m   [0;1mINSERT INTO users ("salt", "updated_at", "crypted_password", "remember_token_expires_at", "remember_token", "first_name", "last_name", "login", "created_at", "email") VALUES('efb9d08191bf379beaf5606cdb0721629bcbe145', '2008-03-06 16:54:38', 'fe3983907b6b5f3572b665036e1516fed46a8b5d', NULL, NULL, NULL, NULL, 'dmolsen', '2008-03-06 16:54:38', 'none')[0m
+Redirected to http://localhost:3000/
+Completed in 0.01502 (66 reqs/sec) | DB: 0.00061 (4%) | 302 Found [http://localhost/users]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 16:54:38) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG1RoYW5rcyBm%0Ab3Igc2lnbmluZyB1cCEGOgpAdXNlZHsGOwlU--68e9f3e2c54bc1fc7dba9b42d567b3c0a1b3ffe2
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000337)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001150)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000349)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00352)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+Completed in 0.02266 (44 reqs/sec) | Rendering: 0.01129 (49%) | DB: 0.00184 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:54:49) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {"message"=>"hey, i'm here now", "commit"=>"Add", "previous_speaker"=>"1", "from"=>"Chris S.", "authenticity_token"=>"2b0f89e94fbbf073a49c725dc09f49d89855d96d", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000356)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000363)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 16:54:49', 'hey, i''m here now', '2008-03-06 16:54:49', 2)[0m
+  [4;35;1mUser Load (0.000415)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00247)
+Completed in 0.02505 (39 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00113 (4%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 16:54:57) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"message"=>"cool", "commit"=>"Add", "previous_speaker"=>"2", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000376)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000362)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 16:54:57', 'cool', '2008-03-06 16:54:57', 1)[0m
+  [4;36;1mUser Load (0.000549)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00293)
+Completed in 0.07378 (13 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00129 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:09:06) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000413)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of chat/index.html.erb:
+1: <%= juggernaut(:client_id => current_user.id) %>
+2: <div id="chatwindow">
+3:   <table id="chat">
+4:     <%= previous_messages %>
+
+    vendor/plugins/juggernaut/lib/juggernaut_helper.rb:8:in `juggernaut'
+    app/views/chat/index.html.erb:1:in `_run_erb_47app47views47chat47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    vendor/plugins/juggernaut/lib/juggernaut.rb:117:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:09:31) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000330)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of chat/index.html.erb:
+1: <%= juggernaut(:client_id => current_user.id) %>
+2: <div id="chatwindow">
+3:   <table id="chat">
+4:     <%= previous_messages %>
+
+    vendor/plugins/juggernaut/lib/juggernaut_helper.rb:8:in `juggernaut'
+    app/views/chat/index.html.erb:1:in `_run_erb_47app47views47chat47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    vendor/plugins/juggernaut/lib/juggernaut.rb:117:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:09:34) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+  [4;36;1mUser Load (0.000389)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Completed in 0.01661 (60 reqs/sec) | Rendering: 0.01403 (84%) | DB: 0.00039 (2%) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:09:38) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;35;1mUser Load (0.000520)[0m   [0mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 0.01665 (60 reqs/sec) | DB: 0.00052 (3%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:09:38) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--660a6e3e0b0af38248b87d81ad64dbbc748b223f
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000345)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of chat/index.html.erb:
+1: <%= juggernaut(:client_id => current_user.id) %>
+2: <div id="chatwindow">
+3:   <table id="chat">
+4:     <%= previous_messages %>
+
+    vendor/plugins/juggernaut/lib/juggernaut_helper.rb:8:in `juggernaut'
+    app/views/chat/index.html.erb:1:in `_run_erb_47app47views47chat47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    vendor/plugins/juggernaut/lib/juggernaut.rb:117:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:10:25) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000393)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+
+
+ActionView::TemplateError (--- !ruby/object:User 
+attributes: 
+  salt: 82a8c501d34851329584c0dfc95f62bbb158bc72
+  updated_at: 2008-03-06 16:35:24
+  crypted_password: 9488c2aa5a28de6ee479231fde63bd11d1a23243
+  remember_token_expires_at: 2008-03-20 20:35:24
+  id: "1"
+  remember_token: 107d027e3bd05b902dea871e922ce115288c753d
+  first_name: 
+  last_name: 
+  login: scharfie
+  created_at: 2008-03-06 16:32:26
+  email: scharfie@gmail.com
+attributes_cache: {}
+
+) on line #1 of chat/index.html.erb:
+1: <%= raise current_user.to_yaml %>
+2: <%= juggernaut(:client_id => current_user.id) %>
+3: <div id="chatwindow">
+4:   <table id="chat">
+
+    app/views/chat/index.html.erb:1:in `_run_erb_47app47views47chat47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    vendor/plugins/juggernaut/lib/juggernaut.rb:117:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:10:36) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000362)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of chat/index.html.erb:
+1: <%= juggernaut %>
+2: <div id="chatwindow">
+3:   <table id="chat">
+4:     <%= previous_messages %>
+
+    vendor/plugins/juggernaut/lib/juggernaut_helper.rb:8:in `juggernaut'
+    app/views/chat/index.html.erb:1:in `_run_erb_47app47views47chat47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render_without_juggernaut'
+    vendor/plugins/juggernaut/lib/juggernaut.rb:117:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:13:00) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000370)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001371)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000376)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00463)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00044)
+  [4;36;1mUser Load (0.000360)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00050)
+Completed in 0.03232 (30 reqs/sec) | Rendering: 0.01848 (57%) | DB: 0.00248 (7%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 17:13:02) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {"message"=>"what", "commit"=>"Add", "previous_speaker"=>"1", "from"=>"Chris S.", "authenticity_token"=>"2b0f89e94fbbf073a49c725dc09f49d89855d96d", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000324)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000383)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 17:13:02', 'what', '2008-03-06 17:13:02', 2)[0m
+  [4;36;1mUser Load (0.000608)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00353)
+Completed in 0.09299 (10 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00131 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:13:06) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000358)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001322)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000334)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00346)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;35;1mUser Load (0.000351)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+Completed in 0.02594 (38 reqs/sec) | Rendering: 0.01379 (53%) | DB: 0.00236 (9%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#logout (for 127.0.0.1 at 2008-03-06 17:13:48) [GET]
+  Session ID: 13089e85ec91f7727f5afa5d749557ae
+  Parameters: {"session_id"=>"BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl\nNTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u\ndHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--f209f339adeb2be86aee5356a7e93cae3317a41e", "client_id"=>"2", "action"=>"logout", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x18e80e0 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00040 (2499 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/chat/logout?client_id=2&session_id=BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:13:51) [GET]
+  Session ID: 5b07a3d4f600e2ff6f328294efc2ae61
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00434 (230 reqs/sec) | Rendering: 0.00232 (53%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:15:01) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000501)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001384)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000366)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00444)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;36;1mUser Load (0.000342)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00100)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00117)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00043)
+Completed in 0.07192 (13 reqs/sec) | Rendering: 0.01781 (24%) | DB: 0.00259 (3%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:15:18) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000360)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001408)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000381)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00521)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00052)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mUser Load (0.000484)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00124)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00051)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00046)
+Completed in 0.03186 (31 reqs/sec) | Rendering: 0.01629 (51%) | DB: 0.00263 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#logout (for 127.0.0.1 at 2008-03-06 17:15:23) [GET]
+  Session ID: 34cf620696719df60382ffb6dc445358
+  Parameters: {"session_id"=>"BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi\nNGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u\ndHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--914e02fe332ed38680463a3b1d766e788523b138", "client_id"=>"1", "action"=>"logout", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x1853800 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00038 (2652 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/chat/logout?client_id=1&session_id=BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:15:28) [GET]
+  Session ID: b65c19225ea7131753dbd29522a57485
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00382 (261 reqs/sec) | Rendering: 0.00173 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:15:40) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000360)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001373)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000363)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00354)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00050)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;36;1mUser Load (0.000385)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00055)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00043)
+Completed in 0.02807 (35 reqs/sec) | Rendering: 0.01605 (57%) | DB: 0.00248 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:15:46) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000353)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001315)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000338)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00341)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;35;1mUser Load (0.000345)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00046)
+Completed in 0.03032 (32 reqs/sec) | Rendering: 0.01595 (52%) | DB: 0.00235 (7%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:15:47) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000349)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001343)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000341)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.05245)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;36;1mUser Load (0.000465)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00121)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00064)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00042)
+Completed in 0.07576 (13 reqs/sec) | Rendering: 0.06346 (83%) | DB: 0.00250 (3%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:15:54) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000356)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001315)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000337)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00343)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00044)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mUser Load (0.000356)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00049)
+Completed in 0.02818 (35 reqs/sec) | Rendering: 0.01576 (55%) | DB: 0.00236 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:16:00) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000349)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003572)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000352)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00361)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00155)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00044)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;36;1mUser Load (0.000379)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00101)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00041)
+Completed in 0.03368 (29 reqs/sec) | Rendering: 0.01857 (55%) | DB: 0.00465 (13%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:16:08) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000352)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001319)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000344)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00338)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00052)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mUser Load (0.000384)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00094)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00066)
+Completed in 0.02731 (36 reqs/sec) | Rendering: 0.01561 (57%) | DB: 0.00240 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:17:03) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000369)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001367)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000365)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00439)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00051)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00098)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mUser Load (0.000447)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00118)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00051)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00041)
+Completed in 0.08283 (12 reqs/sec) | Rendering: 0.01776 (21%) | DB: 0.00255 (3%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:18:49) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000489)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001417)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000330)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00422)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mUser Load (0.000321)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00053)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00046)
+Completed in 0.02807 (35 reqs/sec) | Rendering: 0.01621 (57%) | DB: 0.00256 (9%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:19:16) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000362)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001575)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000331)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00346)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00034)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00034)
+  [4;36;1mUser Load (0.000339)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00046)
+Completed in 0.02585 (38 reqs/sec) | Rendering: 0.01320 (51%) | DB: 0.00261 (10%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:23:06) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000339)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001302)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000365)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00352)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00044)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mUser Load (0.000346)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00049)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00041)
+Completed in 0.02438 (41 reqs/sec) | Rendering: 0.01297 (53%) | DB: 0.00235 (9%) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-03-06 17:23:12) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/logout" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-03-06 17:23:21) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/logout" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-03-06 17:23:26) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/session/destroy" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:23:31) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlN2RhYzQyZjRiYWFmNDc2NTZl%0ANTYzYjgyZDgzNzA2ODI6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f209f339adeb2be86aee5356a7e93cae3317a41e
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000353)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.000370)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:54:38', "email" = 'none', "remember_token" = NULL, "login" = 'dmolsen', "remember_token_expires_at" = NULL, "crypted_password" = 'fe3983907b6b5f3572b665036e1516fed46a8b5d', "last_name" = NULL, "updated_at" = '2008-03-06 17:23:31', "first_name" = NULL, "salt" = 'efb9d08191bf379beaf5606cdb0721629bcbe145' WHERE "id" = 2[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://localhost:3000/
+Completed in 0.01973 (50 reqs/sec) | DB: 0.00072 (3%) | 302 Found [http://localhost/sessions/destroy]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:23:31) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x257de90 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00060 (1661 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:23:31) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00364 (274 reqs/sec) | Rendering: 0.00162 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:24:16) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiVlMzVkZjdkNDRmODQ2Zjhm%0ANzJlZTUwMzFhYTU4YmVjMiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--7cb18e6c33df06edf154990228bee23cf928e77a
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"48e8ee969e4c8c94ade56dc57921634c809733a6", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;36;1mUser Load (0.000368)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 0.01451 (68 reqs/sec) | DB: 0.00037 (2%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:24:16) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZTM1ZGY3ZDQ0Zjg0NmY4Zjcy%0AZWU1MDMxYWE1OGJlYzI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--782d5c00fe9f9a78c5372d92794eccee8d7abc8f
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000371)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001449)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000346)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00356)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00038)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mUser Load (0.000379)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00098)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00053)
+Completed in 0.08009 (12 reqs/sec) | Rendering: 0.01384 (17%) | DB: 0.00254 (3%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:27:01) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000340)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001347)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000418)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00446)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mUser Load (0.000349)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00055)
+Completed in 0.02641 (37 reqs/sec) | Rendering: 0.01476 (55%) | DB: 0.00245 (9%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:28:15) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000341)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001412)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000367)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00357)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mUser Load (0.000358)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00056)
+Completed in 0.02555 (39 reqs/sec) | Rendering: 0.01334 (52%) | DB: 0.00248 (9%) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-03-06 17:28:20) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZTM1ZGY3ZDQ0Zjg0NmY4Zjcy%0AZWU1MDMxYWE1OGJlYzI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bbbdd71edc2220ec307877ce51a15faeaafaa5c6
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/logout" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:28:25) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZTM1ZGY3ZDQ0Zjg0NmY4Zjcy%0AZWU1MDMxYWE1OGJlYzI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--bbbdd71edc2220ec307877ce51a15faeaafaa5c6
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000336)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000350)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:28:25', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00095)
+Redirected to http://localhost:3000/
+Completed in 0.02021 (49 reqs/sec) | DB: 0.00069 (3%) | 302 Found [http://localhost/sessions/destroy]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:28:25) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x2433bac @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00050 (1980 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:28:25) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00396 (252 reqs/sec) | Rendering: 0.00187 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:28:34) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiVjM2M3MjZmYTIwZjgyZjg0%0AMWEzNjZiNWEwYWYyOGExMiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4f81d1a8a9430197840d891e26813200e578b228
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"81d8088876132cd050d8e3db5746c251566e33c8", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie", "remember_me"=>"1"}
+  [4;36;1mUser Load (0.000343)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+  [4;35;1mUser Update (0.000377)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = 'de7b10db526a1720cfe32d54c68dc597b459a5bb', "login" = 'scharfie', "remember_token_expires_at" = '2008-03-20 21:28:34', "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:28:34', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=de7b10db526a1720cfe32d54c68dc597b459a5bb; path=/; expires=Thu, 20 Mar 2008 21:28:34 GMT
+Rendered chat/_login (0.00109)
+Redirected to http://localhost:3000/
+Completed in 0.05468 (18 reqs/sec) | DB: 0.00072 (1%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:28:34) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlYzNjNzI2ZmEyMGY4MmY4NDFh%0AMzY2YjVhMGFmMjhhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--5cdd99f7832a01220fa6b72f6d6025b39370624b
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000472)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001406)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000329)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00343)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00041)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00034)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mUser Load (0.000366)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00104)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00045)
+Completed in 0.02922 (34 reqs/sec) | Rendering: 0.01588 (54%) | DB: 0.00257 (8%) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-03-06 17:28:56) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlYzNjNzI2ZmEyMGY4MmY4NDFh%0AMzY2YjVhMGFmMjhhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--255c690d338e230897910a0a73893035f5cc2242
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/session/destroy" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/bin/mongrel_rails:16:in `load'
+    /usr/bin/mongrel_rails:16
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:28:59) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlYzNjNzI2ZmEyMGY4MmY4NDFh%0AMzY2YjVhMGFmMjhhMTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--255c690d338e230897910a0a73893035f5cc2242
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.000396)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.000354)[0m   [0;1mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:28:59', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00036)
+Redirected to http://localhost:3000/
+Completed in 0.02005 (49 reqs/sec) | DB: 0.00075 (3%) | 302 Found [http://localhost/sessions/destroy]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:28:59) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x243d0e4 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00050 (1988 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:28:59) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00378 (264 reqs/sec) | Rendering: 0.00170 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:29:01) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiVlMWM2OTMwM2E2MDEyYjAz%0ANDczN2IxMWVmOTMzMWY3NiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--9e341ac5d17be1666110e4d85dd82a9f362fb9c2
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"536cd4eddba3dbc73fb6f48b84fb5fedf4965c3d", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;35;1mUser Load (0.000336)[0m   [0mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Rendered chat/_login (0.00067)
+Redirected to http://localhost:3000/
+Completed in 0.01556 (64 reqs/sec) | DB: 0.00034 (2%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:29:01) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZTFjNjkzMDNhNjAxMmIwMzQ3%0AMzdiMTFlZjkzMzFmNzY6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--bd31d800e0e5b0821c7582145e27e8cf61d21391
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000342)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001444)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000428)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00389)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00038)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mUser Load (0.000369)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00098)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00050)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00049)
+Completed in 0.03103 (32 reqs/sec) | Rendering: 0.01447 (46%) | DB: 0.00258 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:30:16) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZTFjNjkzMDNhNjAxMmIwMzQ3%0AMzdiMTFlZjkzMzFmNzY6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--77acf5340f9cdaf46a9dac0a5ada0a08ea6592da
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000320)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001305)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000369)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00377)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mUser Load (0.000365)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00052)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00042)
+Completed in 0.08216 (12 reqs/sec) | Rendering: 0.07064 (85%) | DB: 0.00236 (2%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:30:18) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZTFjNjkzMDNhNjAxMmIwMzQ3%0AMzdiMTFlZjkzMzFmNzY6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--77acf5340f9cdaf46a9dac0a5ada0a08ea6592da
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000331)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000349)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:30:18', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00039)
+Redirected to http://localhost:3000/
+Completed in 0.02085 (47 reqs/sec) | DB: 0.00068 (3%) | 302 Found [http://localhost/logout]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:30:18) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x25c2770 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00052 (1919 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:30:18) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00392 (254 reqs/sec) | Rendering: 0.00174 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:30:20) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiVkM2U1MzkwZTA3Yjk5ZTg3%0AMDg5OWRlYzNmY2Q2ZTZjZiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--5185761a2cd6a02264f37589de20883236a83c46
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"fc5dd98e4490d574b5df44f340e5916bd66027c6", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;36;1mUser Load (0.000340)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Rendered chat/_login (0.00027)
+Redirected to http://localhost:3000/
+Completed in 0.01641 (60 reqs/sec) | DB: 0.00034 (2%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:30:20) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDNlNTM5MGUwN2I5OWU4NzA4%0AOTlkZWMzZmNkNmU2Y2Y6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--6cd44e142b827d04368072f2fe7bd89bc3dd5c38
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000354)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001344)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000342)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00343)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00034)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00034)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00034)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mUser Load (0.000346)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00042)
+Completed in 0.02538 (39 reqs/sec) | Rendering: 0.01354 (53%) | DB: 0.00239 (9%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:32:11) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDNlNTM5MGUwN2I5OWU4NzA4%0AOTlkZWMzZmNkNmU2Y2Y6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--085e9577d75233b034dc56663109df9f3e97e8c1
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000338)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000364)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:32:11', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00039)
+Redirected to http://localhost:3000/
+Completed in 0.05181 (19 reqs/sec) | DB: 0.00070 (1%) | 302 Found [http://localhost/logout]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:32:11) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x25ff15c @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00056 (1801 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:32:11) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00624 (160 reqs/sec) | Rendering: 0.00423 (67%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:32:13) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiU3Njk3YjRjYWJlZmI5ODQ1%0AMzMyZDdiODgxNGM2ZGE4YiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--9566938c17451ef8ead121108c95a7763ae17d2f
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4cf68e6dd83db9c56705843e65f29a55f22d2a3f", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;36;1mUser Load (0.000352)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Rendered chat/_login (0.00077)
+Redirected to http://localhost:3000/
+Completed in 0.01553 (64 reqs/sec) | DB: 0.00035 (2%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:32:13) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlNzY5N2I0Y2FiZWZiOTg0NTMz%0AMmQ3Yjg4MTRjNmRhOGI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--556e16aa485cfe4288f368e401abc48d43488a28
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000340)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001364)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000322)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00338)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;35;1mUser Load (0.000370)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00050)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00051)
+Completed in 0.02608 (38 reqs/sec) | Rendering: 0.01366 (52%) | DB: 0.00240 (9%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:32:19) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000370)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001426)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000354)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00359)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mUser Load (0.000366)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00096)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00047)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00066)
+Completed in 0.07955 (12 reqs/sec) | Rendering: 0.01400 (17%) | DB: 0.00252 (3%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:33:58) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000341)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001361)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000345)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00354)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mUser Load (0.000353)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+Completed in 0.02811 (35 reqs/sec) | Rendering: 0.01614 (57%) | DB: 0.00240 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:00) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlNzY5N2I0Y2FiZWZiOTg0NTMz%0AMmQ3Yjg4MTRjNmRhOGI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c76d5534c069f06d3428c32983c75168c304ac96
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000355)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001295)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000351)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00355)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00038)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00037)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mUser Load (0.000356)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00053)
+Completed in 0.02579 (38 reqs/sec) | Rendering: 0.01390 (53%) | DB: 0.00236 (9%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:34:01) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlNzY5N2I0Y2FiZWZiOTg0NTMz%0AMmQ3Yjg4MTRjNmRhOGI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--c76d5534c069f06d3428c32983c75168c304ac96
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.000394)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.000373)[0m   [0;1mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:34:01', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00103)
+Redirected to http://localhost:3000/
+Completed in 0.02179 (45 reqs/sec) | DB: 0.00077 (3%) | 302 Found [http://localhost/logout]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:02) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x243397c @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00054 (1841 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:34:02) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00372 (268 reqs/sec) | Rendering: 0.00167 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:34:03) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiVmMjcxODYwZTJiYzYxNzFj%0AYmU4OWZjNDU4MzRmNjJlOCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--7a0d8e3ae90e6a4e31410782490e3fd46dcf29e4
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4658f10099217940a044126c37967aac59b39ce4", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;35;1mUser Load (0.000350)[0m   [0mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Rendered chat/_login (0.00026)
+Redirected to http://localhost:3000/
+Completed in 0.01536 (65 reqs/sec) | DB: 0.00035 (2%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:03) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZjI3MTg2MGUyYmM2MTcxY2Jl%0AODlmYzQ1ODM0ZjYyZTg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--f195f362665b5e1b71327a7a8f388523c88a7c7c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000380)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001556)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000388)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00510)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00054)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00141)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00039)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00038)
+  [4;36;1mUser Load (0.000421)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00105)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00050)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00042)
+Completed in 0.03177 (31 reqs/sec) | Rendering: 0.01862 (58%) | DB: 0.00275 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:37) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000334)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001552)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000346)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00341)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00040)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;35;1mUser Load (0.000336)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00057)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00049)
+Completed in 0.02528 (39 reqs/sec) | Rendering: 0.01335 (52%) | DB: 0.00257 (10%) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:34:39) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZjI3MTg2MGUyYmM2MTcxY2Jl%0AODlmYzQ1ODM0ZjYyZTg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--8b20d7412df9ea72a32369750568287084bc20ad
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000335)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000334)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:34:39', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00094)
+Redirected to http://localhost:3000/
+Completed in 0.02147 (46 reqs/sec) | DB: 0.00067 (3%) | 302 Found [http://localhost/logout]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:39) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x26637c4 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00053 (1872 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:34:40) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00382 (261 reqs/sec) | Rendering: 0.00173 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:34:42) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiU3ODJkNTI5OTI3NjRmY2Qw%0AZjM3MDY5OTIwNTZjM2RjYyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--f278a96ed526dbd98e991d670811544090356224
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"7c633ac531d69dbc16af05dee490eb1ad0eb35db", "action"=>"create", "controller"=>"sessions", "password"=>"scharfie", "login"=>"scharfie"}
+  [4;36;1mUser Load (0.000339)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'scharfie') LIMIT 1[0m
+Rendered chat/_login (0.00071)
+Redirected to http://localhost:3000/
+Completed in 0.01578 (63 reqs/sec) | DB: 0.00034 (2%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:42) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlNzgyZDUyOTkyNzY0ZmNkMGYz%0ANzA2OTkyMDU2YzNkY2M6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--7acbfe3796f367c3a73cfb20266f6ca748ad37d0
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000365)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001381)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;35;1mUser Load (0.000435)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00407)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00045)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00038)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00154)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00120)
+  [4;35;1mUser Load (0.000408)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00147)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00051)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00043)
+Completed in 0.04422 (22 reqs/sec) | Rendering: 0.02036 (46%) | DB: 0.00259 (5%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 17:34:50) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"message"=>"hey", "commit"=>"Add", "previous_speaker"=>"2", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000329)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000357)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 17:34:50', 'hey', '2008-03-06 17:34:50', 1)[0m
+  [4;36;1mUser Load (0.000585)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00331)
+Completed in 0.02567 (38 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00127 (4%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 17:34:53) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlNzgyZDUyOTkyNzY0ZmNkMGYz%0ANzA2OTkyMDU2YzNkY2M6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--a790fe0e046029c02c45b42f12d0f87361633892
+  Parameters: {"message"=>"what?", "commit"=>"Add", "previous_speaker"=>"1", "from"=>"Chris S.", "authenticity_token"=>"7c633ac531d69dbc16af05dee490eb1ad0eb35db", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000340)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000356)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 17:34:53', 'what?', '2008-03-06 17:34:53', 1)[0m
+  [4;35;1mUser Load (0.000582)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00325)
+Completed in 0.02537 (39 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00128 (5%) | 200 OK [http://localhost/chat/new]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 17:34:58) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlNzgyZDUyOTkyNzY0ZmNkMGYz%0ANzA2OTkyMDU2YzNkY2M6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--a790fe0e046029c02c45b42f12d0f87361633892
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000387)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000354)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:32:26', "email" = 'scharfie@gmail.com', "remember_token" = NULL, "login" = 'scharfie', "remember_token_expires_at" = NULL, "crypted_password" = '9488c2aa5a28de6ee479231fde63bd11d1a23243', "last_name" = NULL, "updated_at" = '2008-03-06 17:34:58', "first_name" = NULL, "salt" = '82a8c501d34851329584c0dfc95f62bbb158bc72' WHERE "id" = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Rendered chat/_logout (0.00038)
+Redirected to http://localhost:3000/
+Completed in 0.02122 (47 reqs/sec) | DB: 0.00074 (3%) | 302 Found [http://localhost/logout]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:34:58) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x258dae8 @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00055 (1811 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 17:34:58) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00166 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 17:35:07) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiUyMGQyYjBhZDU2M2RiODJl%0ANTNlNzgyZjc0OWJmNzI2NyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--24daab6eea79e2bad910b10876ed1ab128eff479
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"27e994f6ecc1e7bf4cfd8c928b0d3350decff2a0", "action"=>"create", "controller"=>"sessions", "password"=>"dmolsen", "login"=>"dmolsen", "remember_me"=>"1"}
+  [4;36;1mUser Load (0.000341)[0m   [0;1mSELECT * FROM users WHERE (users."login" = 'dmolsen') LIMIT 1[0m
+  [4;35;1mUser Update (0.000353)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:54:38', "email" = 'none', "remember_token" = 'e6c9107ddc9a0e13d83fcc55b814e7e4df693d8b', "login" = 'dmolsen', "remember_token_expires_at" = '2008-03-20 21:35:07', "crypted_password" = 'fe3983907b6b5f3572b665036e1516fed46a8b5d', "last_name" = NULL, "updated_at" = '2008-03-06 17:35:07', "first_name" = NULL, "salt" = 'efb9d08191bf379beaf5606cdb0721629bcbe145' WHERE "id" = 2[0m
+Cookie set: auth_token=e6c9107ddc9a0e13d83fcc55b814e7e4df693d8b; path=/; expires=Thu, 20 Mar 2008 21:35:07 GMT
+Rendered chat/_login (0.00037)
+Redirected to http://localhost:3000/
+Completed in 0.02121 (47 reqs/sec) | DB: 0.00069 (3%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 17:35:07) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMjBkMmIwYWQ1NjNkYjgyZTUz%0AZTc4MmY3NDliZjcyNjc6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--9b10328beee3ad86ee07299922b0be016047df82
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000411)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001932)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC[0m
+  [4;36;1mUser Load (0.000359)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.05677)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00052)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00039)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00038)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00039)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00035)
+  [4;36;1mUser Load (0.000484)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00110)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00049)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00042)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00036)
+Completed in 0.08383 (11 reqs/sec) | Rendering: 0.06900 (82%) | DB: 0.00319 (3%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 17:35:14) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMjBkMmIwYWQ1NjNkYjgyZTUz%0AZTc4MmY3NDliZjcyNjc6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--a198551804577c77e364c82324a23ac967585419
+  Parameters: {"message"=>"what's up", "commit"=>"Add", "previous_speaker"=>"1", "from"=>"Chris S.", "authenticity_token"=>"27e994f6ecc1e7bf4cfd8c928b0d3350decff2a0", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000397)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000362)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 17:35:14', 'what''s up', '2008-03-06 17:35:14', 2)[0m
+  [4;35;1mUser Load (0.000629)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00340)
+Completed in 0.02761 (36 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00139 (5%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 17:35:26) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMjBkMmIwYWQ1NjNkYjgyZTUz%0AZTc4MmY3NDliZjcyNjc6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--a198551804577c77e364c82324a23ac967585419
+  Parameters: {"message"=>"i liked that movie", "commit"=>"Add", "previous_speaker"=>"2", "from"=>"Chris S.", "authenticity_token"=>"27e994f6ecc1e7bf4cfd8c928b0d3350decff2a0", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000332)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000405)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 17:35:26', 'i liked that movie', '2008-03-06 17:35:26', 2)[0m
+  [4;36;1mUser Load (0.000603)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00366)
+Completed in 0.06151 (16 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00134 (2%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 17:35:31) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlZDFhMzExOTI1M2QzNmZmZWNi%0ANGVlN2NhNDdlNzk2MTI6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--914e02fe332ed38680463a3b1d766e788523b138
+  Parameters: {"message"=>"yeah, it's pretty good", "commit"=>"Add", "previous_speaker"=>"2", "from"=>"Chris S.", "authenticity_token"=>"9aa1a0ef21aa8bdde99530b276a340bc4c4e4934", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000324)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000367)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 17:35:31', 'yeah, it''s pretty good', '2008-03-06 17:35:31', 1)[0m
+  [4;35;1mUser Load (0.000577)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00339)
+Completed in 0.02536 (39 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00127 (4%) | 200 OK [http://localhost/chat/new]
