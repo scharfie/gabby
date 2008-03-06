@@ -60,8 +60,18 @@
 </head>
 <body>
 <div id="container">
-  <%= yield %>
+  <div id="header">
+    <%= 'Logged in as: ' + current_user.login if logged_in? %>
+  </div>  
+  <div id="body">
+    <%= yield %>
+  </div>
+  <div id="sidebar">
     
+  </div>
+  <div id="footer">
+    
+  </div>
 </div>  
 </body>
 </html>

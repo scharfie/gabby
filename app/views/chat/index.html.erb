@@ -1,4 +1,4 @@
-<%= juggernaut(:client_id => session[:user_id] || 31) %>
+<%= juggernaut(:client_id => current_user.id) %>
 <div id="chatwindow">
   <table id="chat">
     <%= previous_messages %>

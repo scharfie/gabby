@@ -1,5 +1,7 @@
 require 'digest/sha1'
 class User < ActiveRecord::Base
+  has_many :messages
+  
   # Virtual attribute for the unencrypted password
   attr_accessor :password
 
@@ -74,5 +76,9 @@ class User < ActiveRecord::Base
       crypted_password.blank? || !password.blank?
     end
     
-    
+public
+  def short_name
+    return login
+    first_name + ' ' + last_name[0..1] + '.'
+  end    
 end

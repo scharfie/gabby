@@ -3,15 +3,11 @@ class ChatController < ApplicationController
   end
 	
   def new
-    session[:user_id] = 175
-    
-    @message = Message.new
-    @message.from = params[:from] #'Guest'
-    @message.message = params[:message]
+    @message = current_user.messages.new(:message => params[:message])
     
     render :juggernaut do |page|
       page.insert_html :bottom, 'chat', :partial => 'message'
-      page[:previous_speaker].value = @message.from
+      page[:previous_speaker].value = current_user.id
     end
     
     render :nothing => true
