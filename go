@@ -1,2 +1,2 @@
 script/juggernaut &
-script/server -p 5000
+script/server -p 5000 $*
