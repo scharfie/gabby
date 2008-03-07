@@ -2,6 +2,7 @@ class Message < ActiveRecord::Base
   attr_accessor :system
   attr_accessor :notice
   attr_accessor :timestamp
+  attr_accessor :from
   
   belongs_to :user
   belongs_to :asset
@@ -45,7 +46,7 @@ class Message < ActiveRecord::Base
   
   # Returns who the message is from
   def from
-    user.try(:short_name) || (system? ? '' : '(unknown)')
+    @from || user.try(:short_name) || (system? ? '' : '(unknown)')
   end
   
   # Returns true if this is a system message

@@ -1,9 +1,10 @@
 require 'digest/sha1'
 class User < ActiveRecord::Base
+  attr_accessor :previous_nicknames
+  attr_accessor :password
+
   has_many :messages
   
-  # Virtual attribute for the unencrypted password
-  attr_accessor :password
 
   validates_presence_of     :login, :email
   validates_presence_of     :password,                   :if => :password_required?
@@ -78,9 +79,13 @@ class User < ActiveRecord::Base
     
 public
   def short_name
-    return login
+    return nickname
     first_name + ' ' + last_name[0..1] + '.'
   end    
+  
+  def nickname
+    super.blank? ? login : super
+  end
   
   def system(*args)
     messages.system(*args)
@@ -98,5 +103,14 @@ public
   
   def email
     login
+  end
+  
+  def change_nickname!(nick)
+    (@previous_nicknames ||= []) << nickname
+    self.update_attribute(:nickname, nick)
+  end
+  
+  def previous_nickname
+    previous_nicknames.last
   end
 end
