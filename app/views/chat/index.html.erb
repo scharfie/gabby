@@ -24,9 +24,16 @@
 </div>  
 
 <script type="text/javascript" charset="utf-8">
-  Event.observe($('message'), 'keydown', function(e) {
-    if (e.keyCode == 13 && e.shiftKey == false) {
+  Event.observe($('message'), 'keypress', function(e) {
+    m = $('message');
+    if (e.keyCode == Event.KEY_RETURN && e.shiftKey == false) {
+      if (m.value == null || m.value == '' || m.value == "\n") {
+        Event.stop(e);
+        return false;
+      }
+      
       $('message').form.onsubmit();
+      Event.stop(e);
       return false;
     } else if (e.keyCode == 9) {
       // complete person's name...

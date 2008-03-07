@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 2) do
 
   create_table "messages", :force => true do |t|
     t.integer "user_id"
+    t.string  "from"
     t.text    "message"
     t.integer  "asset_id"
     t.datetime "created_on"

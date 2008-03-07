@@ -36,7 +36,7 @@ module ChatHelper
     if message.attachment?
       attachment_html(message.attachment)
     else  
-      m =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : m
+      m =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : auto_link(m)
     end  
   end
   
@@ -66,7 +66,7 @@ module ChatHelper
     classes << 'new' if new_speaker?(message)
     classes << 'sys' if system_message?(message)
     classes << 'notice' if message.notice?
-    classes << 't' if message.timestamp?
+    classes << 'time' if message.timestamp?
     classes.join(' ')
   end
 end

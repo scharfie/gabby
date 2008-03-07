@@ -26,6 +26,7 @@ h1 {
   background: #226177;
   background: #4F5E85;
   background: #558;
+  background: #222;
   padding: 0;
   color: #fff;
   width: 100%;
@@ -50,9 +51,10 @@ h1 {
 
     .slogan {
       padding-left: 15px;
-      border-left: solid 1px #88b;
+      border-left: solid 1px #555;
       margin-left: 0.5em;
       color: #CBCBDB;
+      color: #777;
     }
   }
 
@@ -76,7 +78,7 @@ h1 {
 
   div.bottom {
     background: #e5e5e5 url(/images/bottom-bg.gif) repeat-x top right;
-    padding-bottom: 90px;
+    padding-bottom: 110px;
   }
 }
 
@@ -178,10 +180,11 @@ tr.sys td.from {
 }
 
 tr.notice td {
-  xbackground: #E6EEF7;
+  background: #E6EEF7 !important;
+  font-size: 0.7em;
 }
 
-tr.t td {
+tr.time td {
   padding-top: 15px;
   padding-bottom: 5px;
   border-right: none;
@@ -200,9 +203,13 @@ td.message a {
   color: blue;
 }
 
+td.toolbar {
+  padding-top: 7px;
+  vertical-align: middle;
+}
+
 img {
   border: none;
-  
   .glyph {
     vertical-align: text-bottom;
   }  
