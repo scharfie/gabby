@@ -34,4 +34,8 @@ class ChatController < ApplicationController
     logout_of_chat
     render :nothing => true
   end
+  
+  def broadcast
+    render :nothing => true, :status => 200
+  end
 end

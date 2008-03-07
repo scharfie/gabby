@@ -46,7 +46,7 @@
      # If a status code other than 200 is encountered, the broadcast_query_login_url fails
      # and the client is disconnected.
      # 
-     # :broadcast_query_login_url: http://localhost:3000/sessions/juggernaut_broadcast
+     :broadcast_query_login_url: http://gabby.sprocket.slackworks.com/chat/broadcast
 
      # 3) Via shared secret key
      # 
