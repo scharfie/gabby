@@ -7,9 +7,8 @@ class ChatController < ApplicationController
     @message = nil
     
     if message =~ /\/nick\s+(.*)/i
-      current_user.change_nickname!($1.chomp)
-      @message = current_user.system 'is the artist formerly known as <span>' + current_user.previous_nickname + '</span>'
-      # @message.from = current_user.previous_nickname
+      prev = current_user.change_nickname!($1.chomp)
+      @message = current_user.system 'is the artist formerly known as <span>' + prev + '</span>'
     else
       @message = current_user.messages.create!(:message => message)
     end    

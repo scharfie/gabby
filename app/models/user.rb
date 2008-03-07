@@ -108,6 +108,7 @@ public
   def change_nickname!(nick)
     (@previous_nicknames ||= []) << nickname
     self.update_attribute(:nickname, nick)
+    return previous_nickname
   end
   
   def previous_nickname
