@@ -17,6 +17,7 @@ protected
       page.insert_html :bottom, 'chat', :partial => 'chat/message', 
         :object => message || @message
       page[:previous_speaker].value = message.user_id  
+      page << 'document.body.scrollTop = document.body.scrollHeight';
     end
   end
   

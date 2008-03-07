@@ -39,12 +39,12 @@ h1 {
 #header td.appname {
   text-align: right;
   font-weight: bold;
-  width: 85px;
-  padding-right: 10px;
+  width: 80px;
+  padding-right: 15px;
 }
 
 #header td.slogan {
-  padding-left: 10px;
+  padding-left: 15px;
    xposition: relative;
    xfont-size: 0.5em;
    xtop: -0.25em;

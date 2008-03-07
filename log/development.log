@@ -16065,3 +16065,259 @@ Rendered chat/_message (0.00018)
   [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
 Rendered chat/_message (0.00042)
 Completed in 0.02185 (45 reqs/sec) | Rendering: 0.01036 (47%) | DB: 0.00221 (10%) | 200 OK [http://localhost/chat/recent]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 23:50:23) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000353)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001048)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;35;1mUser Load (0.000334)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00352)
+  [4;36;1mUser Load (0.000377)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00108)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00051)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00054)
+Rendered chat/_message (0.00021)
+Completed in 0.08761 (11 reqs/sec) | Rendering: 0.01153 (13%) | DB: 0.00211 (2%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#recent (for 127.0.0.1 at 2008-03-06 23:50:25) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"recent", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000386)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;36;1mMessage Load (0.001071)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;35;1mUser Load (0.000328)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00357)
+  [4;36;1mUser Load (0.000315)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00094)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00044)
+Rendered chat/_message (0.00018)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00042)
+Completed in 0.02273 (44 reqs/sec) | Rendering: 0.01045 (45%) | DB: 0.00210 (9%) | 200 OK [http://localhost/chat/recent]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 23:50:30) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000331)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.001093)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000323)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00348)
+  [4;35;1mUser Load (0.000339)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00047)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00043)
+Rendered chat/_message (0.00018)
+Completed in 0.02463 (40 reqs/sec) | Rendering: 0.01245 (50%) | DB: 0.00209 (8%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#recent (for 127.0.0.1 at 2008-03-06 23:50:33) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"recent", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000775)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mMessage Load (0.001170)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000403)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00468)
+  [4;35;1mUser Load (0.000334)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00049)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00066)
+Rendered chat/_message (0.00019)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00293)
+Completed in 0.02729 (36 reqs/sec) | Rendering: 0.01444 (52%) | DB: 0.00268 (9%) | 200 OK [http://localhost/chat/recent]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 23:50:49) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000346)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001054)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;35;1mUser Load (0.000397)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00442)
+  [4;36;1mUser Load (0.000462)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.01580)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00056)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00052)
+Rendered chat/_message (0.00021)
+Completed in 0.11135 (8 reqs/sec) | Rendering: 0.02749 (24%) | DB: 0.00226 (2%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#recent (for 127.0.0.1 at 2008-03-06 23:50:52) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"recent", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000336)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;36;1mMessage Load (0.001022)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;35;1mUser Load (0.000322)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00344)
+  [4;36;1mUser Load (0.000316)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00048)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00044)
+Rendered chat/_message (0.00018)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00043)
+Completed in 0.02156 (46 reqs/sec) | Rendering: 0.01004 (46%) | DB: 0.00200 (9%) | 200 OK [http://localhost/chat/recent]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2008-03-06 23:50:54) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlODQwYjcwNmVmMGU2ZGYxZjVm%0AMzM1ODE3NjBhYzkzZWQ6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--21a1e06cfe47a3ec9b5efe250b7a071c293d3ebc
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000369)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mUser Update (0.000359)[0m   [0mUPDATE users SET "created_at" = '2008-03-06 16:54:38', "email" = 'none', "remember_token" = NULL, "login" = 'dmolsen', "remember_token_expires_at" = NULL, "crypted_password" = 'fe3983907b6b5f3572b665036e1516fed46a8b5d', "last_name" = NULL, "updated_at" = '2008-03-06 23:50:54', "first_name" = NULL, "salt" = 'efb9d08191bf379beaf5606cdb0721629bcbe145' WHERE "id" = 2[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.001030)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00182)
+Redirected to http://localhost:3000/
+Completed in 0.02431 (41 reqs/sec) | DB: 0.00176 (7%) | 302 Found [http://localhost/logout]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 23:50:54) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvMCIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiHllvdSBoYXZlIGJlZW4gbG9n%0AZ2VkIG91dC4GOgpAdXNlZHsGOwdU--d378f3d095fa9509efe8551949baecf23271cf0c
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x250c8bc @filter=:login_required>] rendered_or_redirected.
+Completed in 0.00064 (1572 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-03-06 23:50:54) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgYvIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVy%0AOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--00c01de347844b786f68fb0eec7283bf9ba850c3
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 0.00432 (231 reqs/sec) | Rendering: 0.00178 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/session/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-03-06 23:50:58) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgYvOgxjc3JmX2lkIiUxYTMyNWI0ZjNlMTQ5NGZh%0AMDgyMjJlOGI0YjI0ZTVkOSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6%0ARmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--df465e849cb6f93ed1f2987fca7ed7f9297fa55a
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"a8b3772139d05433f897b012a35cfc438983277e", "action"=>"create", "controller"=>"sessions", "password"=>"dmolsen", "login"=>"dmolsen"}
+  [4;35;1mUser Load (0.000436)[0m   [0mSELECT * FROM users WHERE (users."login" = 'dmolsen') LIMIT 1[0m
+  [4;36;1mUser Load (0.000413)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00124)
+Redirected to http://localhost:3000/
+Completed in 0.09502 (10 reqs/sec) | DB: 0.00085 (0%) | 302 Found [http://localhost/session]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-06 23:50:58) [GET]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMWEzMjViNGYzZTE0OTRmYTA4%0AMjIyZThiNGIyNGU1ZDk6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiG0xvZ2dlZCBp%0AbiBzdWNjZXNzZnVsbHkGOgpAdXNlZHsGOwlU--c1332e93dac894f4cb827a8b6bb891e226660212
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000368)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.001364)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;35;1mUser Load (0.000519)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00493)
+  [4;36;1mUser Load (0.000386)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00126)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00833)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00061)
+Rendered chat/_message (0.00018)
+Completed in 0.03925 (25 reqs/sec) | Rendering: 0.02561 (65%) | DB: 0.00264 (6%) | 200 OK [http://localhost/]
+
+
+Processing ChatController#recent (for 127.0.0.1 at 2008-03-06 23:51:01) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMWEzMjViNGYzZTE0OTRmYTA4%0AMjIyZThiNGIyNGU1ZDk6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--57ccdca3e6cb67e8761d1109c1c785e0951f8275
+  Parameters: {"action"=>"recent", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000328)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;36;1mMessage Load (0.001025)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;35;1mUser Load (0.000371)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00367)
+  [4;36;1mUser Load (0.000395)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00112)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00053)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00046)
+Rendered chat/_message (0.00018)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00043)
+Completed in 0.02176 (45 reqs/sec) | Rendering: 0.01039 (47%) | DB: 0.00212 (9%) | 200 OK [http://localhost/chat/recent]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:51:09) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMWEzMjViNGYzZTE0OTRmYTA4%0AMjIyZThiNGIyNGU1ZDk6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--57ccdca3e6cb67e8761d1109c1c785e0951f8275
+  Parameters: {"message"=>"Hey", "commit"=>"Add", "previous_speaker"=>"", "authenticity_token"=>"a8b3772139d05433f897b012a35cfc438983277e", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000350)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000397)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:51:09', 'Hey', '2008-03-06 23:51:09', 2)[0m
+  [4;36;1mUser Load (0.000427)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00253)
+Completed in 0.02671 (37 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00117 (4%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:51:16) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMmE2OTY1MDJiZjNjZGViZTg1%0AYWJlMmE4Y2MxMWE4ODg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4c3c48b147a8500db9609da419efcbba8bfd7e6d
+  Parameters: {"message"=>"YEah, what's up?", "commit"=>"Add", "previous_speaker"=>"2", "authenticity_token"=>"ba7c4b62a0fed1c117f915ad5703a4032053aef0", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000343)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000360)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:51:16', 'YEah, what''s up?', '2008-03-06 23:51:16', 1)[0m
+  [4;35;1mUser Load (0.000395)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00220)
+Completed in 0.02240 (44 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00110 (4%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:51:24) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMmE2OTY1MDJiZjNjZGViZTg1%0AYWJlMmE4Y2MxMWE4ODg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4c3c48b147a8500db9609da419efcbba8bfd7e6d
+  Parameters: {"message"=>"are you home?", "commit"=>"Add", "previous_speaker"=>"1", "authenticity_token"=>"ba7c4b62a0fed1c117f915ad5703a4032053aef0", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000357)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000370)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:51:24', 'are you home?', '2008-03-06 23:51:24', 1)[0m
+Rendered chat/_message (0.00033)
+Completed in 0.05719 (17 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00073 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:52:21) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMmE2OTY1MDJiZjNjZGViZTg1%0AYWJlMmE4Y2MxMWE4ODg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4c3c48b147a8500db9609da419efcbba8bfd7e6d
+  Parameters: {"message"=>"wait...", "commit"=>"Add", "previous_speaker"=>"1", "authenticity_token"=>"ba7c4b62a0fed1c117f915ad5703a4032053aef0", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000338)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000352)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:52:21', 'wait...', '2008-03-06 23:52:21', 1)[0m
+Rendered chat/_message (0.00032)
+Completed in 0.05060 (19 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00069 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:52:26) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMmE2OTY1MDJiZjNjZGViZTg1%0AYWJlMmE4Y2MxMWE4ODg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4c3c48b147a8500db9609da419efcbba8bfd7e6d
+  Parameters: {"message"=>"i'm sure you aren't", "commit"=>"Add", "previous_speaker"=>"1", "authenticity_token"=>"ba7c4b62a0fed1c117f915ad5703a4032053aef0", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000359)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000357)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:52:26', 'i''m sure you aren''t', '2008-03-06 23:52:26', 1)[0m
+Rendered chat/_message (0.00032)
+Completed in 0.05198 (19 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00072 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:52:36) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMWEzMjViNGYzZTE0OTRmYTA4%0AMjIyZThiNGIyNGU1ZDk6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--57ccdca3e6cb67e8761d1109c1c785e0951f8275
+  Parameters: {"message"=>"yeah, i'm away at the moment", "commit"=>"Add", "previous_speaker"=>"1", "authenticity_token"=>"a8b3772139d05433f897b012a35cfc438983277e", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000434)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000390)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:52:36', 'yeah, i''m away at the moment', '2008-03-06 23:52:36', 2)[0m
+  [4;36;1mUser Load (0.000622)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00347)
+Completed in 0.02612 (38 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00145 (5%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:52:40) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMWEzMjViNGYzZTE0OTRmYTA4%0AMjIyZThiNGIyNGU1ZDk6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--57ccdca3e6cb67e8761d1109c1c785e0951f8275
+  Parameters: {"message"=>"cool", "commit"=>"Add", "previous_speaker"=>"2", "authenticity_token"=>"a8b3772139d05433f897b012a35cfc438983277e", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000376)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000358)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:52:40', 'cool', '2008-03-06 23:52:40', 2)[0m
+Rendered chat/_message (0.00032)
+Completed in 0.02263 (44 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00073 (3%) | 200 OK [http://localhost/chat/new]
