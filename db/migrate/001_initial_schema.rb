@@ -17,7 +17,6 @@ class InitialSchema < ActiveRecord::Migration
       t.datetime "remember_token_expires_at"
       t.timestamps
     end
-    
   end
 
   def self.down

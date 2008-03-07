@@ -11,8 +11,8 @@ class User < ActiveRecord::Base
   validates_length_of       :password, :within => 4..40, :if => :password_required?
   validates_confirmation_of :password,                   :if => :password_required?
   validates_length_of       :login,    :within => 3..40
-  validates_length_of       :email,    :within => 3..100
-  validates_uniqueness_of   :login, :email, :case_sensitive => false
+  # validates_length_of       :email,    :within => 3..100
+  # validates_uniqueness_of   :login, :email, :case_sensitive => false
   before_save :encrypt_password
   
   # prevents a user from submitting a crafted form that bypasses activation
@@ -84,5 +84,19 @@ public
   
   def system(*args)
     messages.system(*args)
+  end
+  
+  def message(msg)
+    messages.build(:message => msg)
+  end
+  
+  def notice(msg)
+    returning message(msg) do |e|
+      e.notice = true
+    end  
+  end
+  
+  def email
+    login
   end
 end

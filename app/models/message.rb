@@ -1,6 +1,9 @@
 class Message < ActiveRecord::Base
   attr_accessor :system
+  attr_accessor :notice
+  
   belongs_to :user
+  belongs_to :asset
 
   ## Class methods
 
@@ -17,6 +20,16 @@ class Message < ActiveRecord::Base
     end
   end
   
+  def attachment
+    asset
+  end
+  
+  def has_attachment?
+    !asset.nil?
+  end
+  
+  alias_method :attachment?, :has_attachment?
+  
   # def message
   #   system? ? "- #{self[:message]} -" : self[:message]
   # end
@@ -29,5 +42,13 @@ class Message < ActiveRecord::Base
   # Returns true if this is a system message
   def system?
     @system || false
+  end
+
+  def notice?
+    @notice || attachment?
+  end
+  
+  def created_on
+    self[:created_on] || Time.now
   end
 end

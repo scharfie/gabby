@@ -4,27 +4,28 @@
   <title>gabby</title>
   <%= javascript_include_tag 'prototype', :juggernaut %>
   <%= stylesheet_link_tag 'base' %>
+  <%= stylesheet_link_tag 'session' unless logged_in? %>
 </head>
 <body>
-  <table id="main">
+<% if logged_in? %>
+  <table id="main" style="width: 100%;">
     <tr>
       <td colspan="2">
         <%= render :partial => 'layouts/header' %>
       </td>
     </tr>
     <tr>
-      <td>
+      <td id="body">
         <%= yield %>
       </td>
-      <td>
+      <td id="sidebar">
         <%= yield :sidebar %>
+        <!-- <h2>This is the sidebar</h2> -->
       </td>
     </tr>
-    <tr>
-      <td>
-        <%= yield :chatbox %>
-      </td>
-    </tr>
-  </table>    
+  </table>
+<% else %>  
+  <%= yield %>
+<% end %>  
 </body>
 </html>

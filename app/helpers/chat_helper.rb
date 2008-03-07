@@ -1,13 +1,5 @@
 module ChatHelper
   def recent_messages(options={})
-    # messages = []
-    # messages << { :from => 'Ryan H.',  :message => "what's happening with slate?"}
-    # messages << { :from => 'Chris S.', :message => "we'll be open-sourcing it soon..."}
-    # messages << { :from => 'Sam W.',   :message => "i think we should change the code to this:" }
-    # messages << { :from => 'Sam W.',   :message => "@message = Message.new\n@message.from = 'Guest'\n@message.message = data"}
-    # messages << { :from => 'Steve J.', :message => 'why?  it works just fine the way it is'}
-    # messages << { :from => 'Chris S.', :message => 'File: <a href="#">slate_wireframes.pdf</a>' }
-    
     out = []
     for m in Message.recent(15)
       out << render(:partial => 'message', :object => m)
@@ -20,18 +12,29 @@ module ChatHelper
     # 
     # m = Message.system('swein joined the chat.')
     # out << render(:partial => 'message', :object => m)
+
+    params[:previous_speaker] = nil
     
     if options[:break]
       m = current_user.system('joined the chat')
       out << render(:partial => 'message', :object => m)
+      out << '<script type="text/javascript">this.juggernaut.onMessage();</script>'
     end
-    
-    params[:previous_speaker] = nil
+
     out
   end
   
   def message_body(message)
-    (m=message.message) =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : m
+    m = message.message
+    if message.attachment?
+      'uploaded ' + attachment_link(message.attachment)
+    else  
+      m =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : m
+    end  
+  end
+  
+  def attachment_link(attachment)
+    link_to(attachment.filename, attachment.public_filename)
   end
   
   def new_speaker?(message)
@@ -44,8 +47,10 @@ module ChatHelper
   
   def message_class(message)
     classes = []
+    classes << "u-#{message.user_id} m-#{message.id}"
     classes << 'new' if new_speaker?(message)
     classes << 'sys' if system_message?(message)
+    classes << 'notice' if message.notice?
     classes.join(' ')
   end
 end

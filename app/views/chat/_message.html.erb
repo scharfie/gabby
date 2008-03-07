@@ -1,8 +1,8 @@
 <tr class="<%= message_class(message) %>">
   <td class="from">
-    <% if new_speaker?(message) || system_message?(message) %>
+    <%# if new_speaker?(message) || system_message?(message) %>
       <div class="from"><%= message.from %></div>
-    <% end %>  
+    <%# end %>  
   </td>
   <td class="message">
     <div class="message"><%= message_body message %></div>

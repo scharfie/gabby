@@ -7,4 +7,8 @@ module ApplicationHelper
   def chat_time_format
     ':hour12::minute :lmeridian'
   end
+  
+  def glyph(name)
+    image_tag "glyphs/#{name}.png", :class => 'glyph'
+  end
 end

@@ -12,10 +12,11 @@ class ApplicationController < ActionController::Base
   # protect_from_forgery # :secret => '12d2e0a7215f0f256b4655c623494982'
   
 protected
-  def render_juggernaut_message(message)
+  def render_juggernaut_message(message=nil)
+    message ||= @message
     render :juggernaut do |page|
       page.insert_html :bottom, 'chat', :partial => 'chat/message', 
-        :object => message || @message
+        :object => message
       page[:previous_speaker].value = message.user_id  
       page << 'document.body.scrollTop = document.body.scrollHeight';
     end
@@ -23,13 +24,13 @@ protected
   
   def logout_of_chat
     render_juggernaut_message current_user.system(
-      current_user.login + ' left the chat.'
+      'left the chat'
     )
   end
   
   def login_to_chat
     render_juggernaut_message current_user.system(
-      current_user.login + ' joined the chat.'
+      'joined the chat'
     )
   end
   

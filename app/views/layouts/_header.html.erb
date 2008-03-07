@@ -1,16 +1,23 @@
-  <div id="header">
-    <div class="app">
-      <table>
-        <tr>
-          <td class="appname">gabby</td>
-          <td class="slogan">go ahead, run your mouth</td>
-        </tr>
-      </table>    
-    </div>
-    <div class="session">
-    <% if logged_in? %>
-      Logged in as: <%= current_user.login  %>
-      <%= link_to 'Logout', logout_url %>
-    <% end %>
-    </div>  
-  </div>  
+<div id="header">
+  <table>
+    <tr>
+      <td class="appname">gabby</td>
+      <td class="slogan">go ahead, run your mouth</td>
+      <td class="toolbar">
+        <%#= link_to glyph('application_get'), '#' %>
+        
+        <% form_for(:asset, :url => { :controller => 'assets', :action => "create" }, :html => { :multipart => true, :target => 'upload_frame' }) do |form| %>        
+          <%= form.file_field :uploaded_data %>
+          <%= submit_tag 'Upload' %>
+        <% end %>
+        <iframe id='upload_frame' name="upload_frame" style="width:1px;height:1px;border:0px" src="about:blank"></iframe>
+      </td>
+      <td class="session">
+        <% if logged_in? %>
+          <%= current_user.login  %>
+          | <%= link_to 'Logout', logout_url %>
+        <% end %>
+      </td>
+    </tr>
+  </table>    
+</div>

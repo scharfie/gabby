@@ -10,10 +10,22 @@
 # It's strongly recommended to check this file into your version control system.
 
 ActiveRecord::Schema.define(:version => 2) do
+  create_table "assets", :force => true do |t|
+    t.string   "name"
+    t.string   "filename"
+    t.integer  "size"
+    t.string   "content_type"
+    t.integer  "height"
+    t.integer  "width"
+    t.integer  "parent_id"
+    t.datetime "created_on"
+    t.datetime "updated_on"
+  end
 
   create_table "messages", :force => true do |t|
     t.integer "user_id"
     t.text    "message"
+    t.integer  "asset_id"
     t.datetime "created_on"
     t.datetime "updated_on"
   end

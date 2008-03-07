@@ -101,6 +101,8 @@ var Juggernaut = Class.create({
      this.currentSignature = msg.signature;
      this.logger("Received data:\n" + msg.body + "\n");
      eval(msg.body);
+     
+     this.onMessage();
   },
 
   appendFlashObject: function() {
@@ -174,7 +176,16 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
   
   ,
   onConnected: function() {
-    new Ajax.Updater('chat', '/chat/recent');
+    var chatter = this;
+    new Ajax.Updater('chat', '/chat/recent', {evalScripts:true});
+    
     $('chatbox').show();
+  }
+  
+  ,
+  onMessage: function() {
+    $$('tr.u-' + this.options.client_id).each(function(m) {
+      m.addClassName('me');
+    });
   }
 });
