@@ -1,7 +1,7 @@
 module ChatHelper
   def recent_messages(options={})
     out = []
-    for m in Message.recent(15)
+    for m in Message.recent(45)
       out << render(:partial => 'message', :object => m)
       params[:previous_speaker] = m.user_id
     end  

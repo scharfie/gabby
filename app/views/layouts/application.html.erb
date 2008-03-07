@@ -2,7 +2,8 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>gabby</title>
-  <%= javascript_include_tag 'prototype', :juggernaut %>
+  <%= javascript_include_tag 'prototype' %>
+  <%#= javascript_include_tag :juggernaut %>
   <%= stylesheet_link_tag 'base' %>
   <%= stylesheet_link_tag 'session' unless logged_in? %>
 </head>
@@ -17,6 +18,11 @@
     <tr>
       <td id="body">
         <%= yield %>
+        <script type="text/javascript" charset="utf-8">
+          // $$('tr.u-1').each(function(m) {
+          //   m.addClassName('me');
+          // });
+        </script>
       </td>
       <td id="sidebar">
         <%= yield :sidebar %>

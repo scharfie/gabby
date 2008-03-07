@@ -71,7 +71,7 @@ h1 {
   padding-top: 30px;
 
   div.chat {
-    padding: 10px;   
+    padding: 20px 10px 10px;   
   }
 
   div.bottom {
@@ -167,7 +167,9 @@ div.time {
 }
 
 tr.me td.from {
-  background: #ffe;
+  xbackground: #ffe;
+  background: url(/images/me-bg.png) repeat-y top right;
+  border-right: solid 1px #777;
 }
 
 tr.sys td {

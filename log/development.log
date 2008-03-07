@@ -24940,3 +24940,2683 @@ Rendered chat/_message (0.00146)
   [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
 Rendered chat/_message (0.00068)
 Completed in 0.05316 (18 reqs/sec) | Rendering: 0.03616 (68%) | DB: 0.00533 (10%) | 200 OK [http://localhost/chat/recent]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:27:12) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000411)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.002491)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000969)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.01053)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00104)
+  [4;36;1mUser Load (0.000481)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00161)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00121)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00119)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00104)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00138)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00110)
+  [4;36;1mAsset Load (0.000453)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00522)
+  [4;36;1mAsset Load (0.000503)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00160)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00184)
+  [4;36;1mAsset Load (0.000488)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00160)
+Rendered layouts/_header (0.00084)
+Completed in 0.06007 (16 reqs/sec) | Rendering: 0.04192 (69%) | DB: 0.00580 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:27:12) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01541 (64 reqs/sec) | Rendering: 0.01247 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:28:21) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000555)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.002584)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000536)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.01163)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mUser Load (0.000484)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00158)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mAsset Load (0.000439)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00455)
+  [4;36;1mAsset Load (0.000443)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00158)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mAsset Load (0.000458)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00144)
+Rendered layouts/_header (0.00078)
+Completed in 0.05822 (17 reqs/sec) | Rendering: 0.04008 (68%) | DB: 0.00550 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:28:21) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01568 (63 reqs/sec) | Rendering: 0.01256 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:28:50) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000383)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.002745)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000522)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.01019)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00114)
+  [4;36;1mUser Load (0.000562)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00257)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mAsset Load (0.000398)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00450)
+  [4;36;1mAsset Load (0.000522)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00185)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mAsset Load (0.000449)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00133)
+Rendered layouts/_header (0.00068)
+Completed in 0.05392 (18 reqs/sec) | Rendering: 0.03709 (68%) | DB: 0.00558 (10%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:28:50) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01508 (66 reqs/sec) | Rendering: 0.01228 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:29:09) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000419)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.002451)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000592)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00938)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mUser Load (0.000822)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00274)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00120)
+  [4;36;1mAsset Load (0.000550)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00511)
+  [4;36;1mAsset Load (0.000459)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00151)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mAsset Load (0.000413)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00136)
+Rendered layouts/_header (0.00069)
+Completed in 0.05453 (18 reqs/sec) | Rendering: 0.03678 (67%) | DB: 0.00571 (10%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:29:09) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01506 (66 reqs/sec) | Rendering: 0.01206 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:29:15) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000408)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.002837)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000651)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.01048)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;36;1mUser Load (0.000480)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00168)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00109)
+  [4;36;1mAsset Load (0.000471)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00527)
+  [4;36;1mAsset Load (0.000433)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mAsset Load (0.000441)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00144)
+Rendered layouts/_header (0.00073)
+Completed in 0.12663 (7 reqs/sec) | Rendering: 0.10995 (86%) | DB: 0.00572 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:29:16) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01607 (62 reqs/sec) | Rendering: 0.01321 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:29:19) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkHIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0fe7cfd5dc9bcf400cc5c82eea0eb76199e6eb63
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000586)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.002914)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 15[0m
+  [4;36;1mUser Load (0.000519)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.01098)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00095)
+  [4;36;1mUser Load (0.000513)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00199)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mAsset Load (0.000427)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00463)
+  [4;36;1mAsset Load (0.002702)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00437)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00103)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mAsset Load (0.000497)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00177)
+Rendered layouts/_header (0.00066)
+Completed in 0.05932 (16 reqs/sec) | Rendering: 0.03926 (66%) | DB: 0.00816 (13%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:29:19) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01533 (65 reqs/sec) | Rendering: 0.01244 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:29:36) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000490)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003426)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000573)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01211)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mUser Load (0.000452)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00103)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00111)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00109)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mAsset Load (0.000391)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00437)
+  [4;35;1mAsset Load (0.000420)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00094)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mAsset Load (0.000440)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00137)
+Rendered layouts/_header (0.00067)
+Completed in 0.06609 (15 reqs/sec) | Rendering: 0.04738 (71%) | DB: 0.00619 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:29:37) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01512 (66 reqs/sec) | Rendering: 0.01235 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:32:08) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000407)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.004770)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000649)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01271)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00120)
+  [4;35;1mUser Load (0.000480)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00171)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00125)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.07579)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mAsset Load (0.000482)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00476)
+  [4;36;1mAsset Load (0.000445)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00155)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mAsset Load (0.000483)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+Rendered layouts/_header (0.00073)
+Completed in 0.14321 (6 reqs/sec) | Rendering: 0.12418 (86%) | DB: 0.00772 (5%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:32:08) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01540 (64 reqs/sec) | Rendering: 0.01258 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:32:15) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000405)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003424)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000520)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01264)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mUser Load (0.000512)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00162)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00098)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00100)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00105)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mAsset Load (0.000401)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00446)
+  [4;35;1mAsset Load (0.000408)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00138)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00194)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00103)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mAsset Load (0.000491)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00154)
+Rendered layouts/_header (0.00082)
+Completed in 0.06899 (14 reqs/sec) | Rendering: 0.05160 (74%) | DB: 0.00616 (8%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:32:15) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01587 (63 reqs/sec) | Rendering: 0.01295 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:32:38) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000411)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003484)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000495)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01068)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mUser Load (0.000694)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00225)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00148)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mAsset Load (0.000407)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00484)
+  [4;36;1mAsset Load (0.000471)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00154)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mAsset Load (0.000428)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00133)
+Rendered layouts/_header (0.00067)
+Completed in 0.06618 (15 reqs/sec) | Rendering: 0.04766 (72%) | DB: 0.00639 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:32:38) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01535 (65 reqs/sec) | Rendering: 0.01264 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:32:43) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000516)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003280)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000542)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00101)
+  [4;36;1mUser Load (0.000475)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00153)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00110)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00107)
+  [4;35;1mAsset Load (0.000527)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.07517)
+  [4;35;1mAsset Load (0.000517)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00184)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00117)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00109)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00098)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00195)
+  [4;35;1mAsset Load (0.000485)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00162)
+Rendered layouts/_header (0.00086)
+Completed in 0.13949 (7 reqs/sec) | Rendering: 0.12093 (86%) | DB: 0.00634 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:32:43) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01561 (64 reqs/sec) | Rendering: 0.01278 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:32:57) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000525)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003598)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000499)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00975)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mUser Load (0.000459)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00161)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00116)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00068)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00068)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00104)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mAsset Load (0.000395)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00522)
+  [4;36;1mAsset Load (0.000501)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00173)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00109)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00198)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mAsset Load (0.000466)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+Rendered layouts/_header (0.00068)
+Completed in 0.06869 (14 reqs/sec) | Rendering: 0.04844 (70%) | DB: 0.00644 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:32:58) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01603 (62 reqs/sec) | Rendering: 0.01269 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:34:35) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000432)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003494)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000616)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mUser Load (0.000460)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00150)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00109)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00112)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mAsset Load (0.000416)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00438)
+  [4;35;1mAsset Load (0.000409)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00140)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mAsset Load (0.000430)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00134)
+Rendered layouts/_header (0.00067)
+Completed in 0.06663 (15 reqs/sec) | Rendering: 0.04746 (71%) | DB: 0.00626 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:34:35) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01510 (66 reqs/sec) | Rendering: 0.01234 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:34:37) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000459)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003539)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000529)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01024)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00149)
+  [4;35;1mUser Load (0.000555)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00191)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00143)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00100)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00106)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00121)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00105)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00113)
+  [4;36;1mAsset Load (0.000405)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00477)
+  [4;36;1mAsset Load (0.000560)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.07362)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00132)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mAsset Load (0.000578)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00190)
+Rendered layouts/_header (0.00095)
+Completed in 0.14159 (7 reqs/sec) | Rendering: 0.12345 (87%) | DB: 0.00662 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:34:37) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01611 (62 reqs/sec) | Rendering: 0.01319 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:09) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000501)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003376)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000626)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01046)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00112)
+  [4;36;1mUser Load (0.000478)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00168)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00119)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00101)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00113)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;35;1mAsset Load (0.000410)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00472)
+  [4;35;1mAsset Load (0.000428)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00141)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00095)
+  [4;35;1mAsset Load (0.000516)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00156)
+Rendered layouts/_header (0.00066)
+Completed in 0.06525 (15 reqs/sec) | Rendering: 0.04739 (72%) | DB: 0.00634 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:09) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01506 (66 reqs/sec) | Rendering: 0.01232 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:10) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000543)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003456)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000595)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01125)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00095)
+  [4;35;1mUser Load (0.000489)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00163)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00121)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mAsset Load (0.000394)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00458)
+  [4;36;1mAsset Load (0.000457)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00152)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mAsset Load (0.000531)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00186)
+Rendered layouts/_header (0.00079)
+Completed in 0.06660 (15 reqs/sec) | Rendering: 0.04797 (72%) | DB: 0.00647 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:10) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01526 (65 reqs/sec) | Rendering: 0.01237 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:11) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000570)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003488)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000494)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00948)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mUser Load (0.000431)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00147)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00110)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00115)
+  [4;35;1mAsset Load (0.000420)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00808)
+  [4;35;1mAsset Load (0.000395)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00140)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00163)
+  [4;35;1mAsset Load (0.000666)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00347)
+Rendered layouts/_header (0.00090)
+Completed in 0.14528 (6 reqs/sec) | Rendering: 0.12701 (87%) | DB: 0.00646 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:11) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01613 (61 reqs/sec) | Rendering: 0.01293 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:15) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000500)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003366)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000488)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01117)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mUser Load (0.000442)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00155)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00127)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mAsset Load (0.000392)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00454)
+  [4;36;1mAsset Load (0.000475)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00154)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mAsset Load (0.000444)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00141)
+Rendered layouts/_header (0.00105)
+Completed in 0.06432 (15 reqs/sec) | Rendering: 0.04721 (73%) | DB: 0.00611 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:15) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01564 (63 reqs/sec) | Rendering: 0.01287 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:26) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000609)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003413)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000538)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mUser Load (0.000554)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00195)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00115)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00098)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00114)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00102)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mAsset Load (0.000485)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00477)
+  [4;35;1mAsset Load (0.000418)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00140)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mAsset Load (0.000464)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+Rendered layouts/_header (0.00068)
+Completed in 0.06741 (14 reqs/sec) | Rendering: 0.04803 (71%) | DB: 0.00648 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:26) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01225 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:34) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000496)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003670)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000501)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00952)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mUser Load (0.000538)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00193)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00129)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00257)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00101)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mAsset Load (0.000395)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00619)
+  [4;36;1mAsset Load (0.000552)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00192)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00101)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mAsset Load (0.000475)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+Rendered layouts/_header (0.00068)
+Completed in 0.06919 (14 reqs/sec) | Rendering: 0.05031 (72%) | DB: 0.00663 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:34) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01553 (64 reqs/sec) | Rendering: 0.01275 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:35:48) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000413)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003552)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000547)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01017)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00106)
+  [4;36;1mUser Load (0.000479)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00161)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00100)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00110)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00107)
+  [4;35;1mAsset Load (0.000395)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00488)
+  [4;35;1mAsset Load (0.000532)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00184)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00243)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mAsset Load (0.000534)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00244)
+Rendered layouts/_header (0.00068)
+Completed in 0.06924 (14 reqs/sec) | Rendering: 0.05149 (74%) | DB: 0.00645 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:35:48) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01498 (66 reqs/sec) | Rendering: 0.01222 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:36:30) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000438)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003459)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000592)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01255)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mUser Load (0.000487)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00157)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00103)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mAsset Load (0.000408)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00451)
+  [4;36;1mAsset Load (0.000481)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00164)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mAsset Load (0.000420)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+Rendered layouts/_header (0.00066)
+Completed in 0.06683 (14 reqs/sec) | Rendering: 0.04827 (72%) | DB: 0.00629 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:36:30) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01554 (64 reqs/sec) | Rendering: 0.01272 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:36:31) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000433)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003677)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000495)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01179)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00094)
+  [4;36;1mUser Load (0.000609)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00188)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mAsset Load (0.000451)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00521)
+  [4;35;1mAsset Load (0.000544)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00192)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00108)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00101)
+  [4;35;1mAsset Load (0.000525)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00192)
+Rendered layouts/_header (0.00066)
+Completed in 0.06853 (14 reqs/sec) | Rendering: 0.04995 (72%) | DB: 0.00673 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:36:31) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01559 (64 reqs/sec) | Rendering: 0.01280 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:36:40) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000436)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003392)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000528)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00967)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mUser Load (0.000469)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00152)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00121)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00336)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00109)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mAsset Load (0.000385)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00437)
+  [4;36;1mAsset Load (0.000443)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00288)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mAsset Load (0.000472)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00149)
+Rendered layouts/_header (0.00076)
+Completed in 0.06944 (14 reqs/sec) | Rendering: 0.05109 (73%) | DB: 0.00612 (8%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:36:40) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01514 (66 reqs/sec) | Rendering: 0.01231 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:36:51) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000542)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003497)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000524)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01182)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mUser Load (0.000573)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00199)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00134)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00113)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00132)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00115)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;35;1mAsset Load (0.000486)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00478)
+  [4;35;1mAsset Load (0.000465)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mAsset Load (0.000425)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00132)
+Rendered layouts/_header (0.00068)
+Completed in 0.14351 (6 reqs/sec) | Rendering: 0.05028 (35%) | DB: 0.00651 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:36:51) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01548 (64 reqs/sec) | Rendering: 0.01274 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:36:52) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000547)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003384)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000640)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01146)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mUser Load (0.000446)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00107)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00096)
+  [4;36;1mAsset Load (0.000689)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00729)
+  [4;36;1mAsset Load (0.000494)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00166)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mAsset Load (0.000531)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00162)
+Rendered layouts/_header (0.00068)
+Completed in 0.06778 (14 reqs/sec) | Rendering: 0.04845 (71%) | DB: 0.00673 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:36:53) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01542 (64 reqs/sec) | Rendering: 0.01258 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:36:59) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000394)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003704)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000560)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00953)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00104)
+  [4;36;1mUser Load (0.000449)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00159)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00102)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00148)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mAsset Load (0.000404)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00512)
+  [4;35;1mAsset Load (0.000485)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00179)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00112)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00100)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mAsset Load (0.000472)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00213)
+Rendered layouts/_header (0.00091)
+Completed in 0.06812 (14 reqs/sec) | Rendering: 0.04975 (73%) | DB: 0.00647 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:36:59) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01647 (60 reqs/sec) | Rendering: 0.01374 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:00) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000613)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.004898)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000640)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01117)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00108)
+  [4;35;1mUser Load (0.000505)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00196)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00097)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00095)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00749)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00108)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mAsset Load (0.000457)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00456)
+  [4;36;1mAsset Load (0.000416)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00152)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mAsset Load (0.000464)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00141)
+Rendered layouts/_header (0.00073)
+Completed in 0.14860 (6 reqs/sec) | Rendering: 0.05470 (36%) | DB: 0.00799 (5%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:01) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01549 (64 reqs/sec) | Rendering: 0.01264 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:08) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000572)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003263)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000502)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00957)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mUser Load (0.000485)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00167)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00095)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00097)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00111)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00102)
+  [4;35;1mAsset Load (0.000436)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00464)
+  [4;35;1mAsset Load (0.000454)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00150)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mAsset Load (0.000420)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00131)
+Rendered layouts/_header (0.00068)
+Completed in 0.06285 (15 reqs/sec) | Rendering: 0.04498 (71%) | DB: 0.00613 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:09) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01870 (53 reqs/sec) | Rendering: 0.01391 (74%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:19) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000414)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003386)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000545)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00980)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mUser Load (0.000407)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00145)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00114)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00101)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00093)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00114)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00107)
+  [4;36;1mAsset Load (0.000412)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00450)
+  [4;36;1mAsset Load (0.000507)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00183)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mAsset Load (0.000518)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00166)
+Rendered layouts/_header (0.00068)
+Completed in 0.06478 (15 reqs/sec) | Rendering: 0.04662 (71%) | DB: 0.00619 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:19) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01526 (65 reqs/sec) | Rendering: 0.01253 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:27) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000510)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003613)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000528)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01024)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mUser Load (0.000488)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00191)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00118)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00118)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00117)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00136)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00106)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00116)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mAsset Load (0.000406)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00471)
+  [4;35;1mAsset Load (0.000514)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00180)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mAsset Load (0.000419)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00134)
+Rendered layouts/_header (0.00066)
+Completed in 0.14188 (7 reqs/sec) | Rendering: 0.05090 (35%) | DB: 0.00648 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:27) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01513 (66 reqs/sec) | Rendering: 0.01233 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:47) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000397)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003401)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000847)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00993)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00101)
+  [4;35;1mUser Load (0.000626)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00188)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00123)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00135)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00097)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00109)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mAsset Load (0.000407)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00467)
+  [4;36;1mAsset Load (0.000449)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00150)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mAsset Load (0.000452)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00139)
+Rendered layouts/_header (0.00078)
+Completed in 0.06630 (15 reqs/sec) | Rendering: 0.04793 (72%) | DB: 0.00658 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:48) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01538 (65 reqs/sec) | Rendering: 0.01255 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:49) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000401)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003443)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000608)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01143)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00108)
+  [4;36;1mUser Load (0.000596)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00210)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00120)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00127)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00112)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mAsset Load (0.000427)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00454)
+  [4;35;1mAsset Load (0.000448)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00154)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mAsset Load (0.000507)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00158)
+Rendered layouts/_header (0.00070)
+Completed in 0.06551 (15 reqs/sec) | Rendering: 0.04796 (73%) | DB: 0.00643 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:49) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01224 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:37:54) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000405)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003606)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000528)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01284)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mUser Load (0.000466)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00159)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00094)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00094)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mAsset Load (0.000412)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00464)
+  [4;36;1mAsset Load (0.000522)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00181)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00775)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mAsset Load (0.000464)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+Rendered layouts/_header (0.00069)
+Completed in 0.14683 (6 reqs/sec) | Rendering: 0.12921 (87%) | DB: 0.00640 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:37:54) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01532 (65 reqs/sec) | Rendering: 0.01241 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:39:23) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000403)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003299)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000551)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01009)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00102)
+  [4;36;1mUser Load (0.000564)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00173)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00094)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00098)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00094)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00113)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00108)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00108)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00098)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00097)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mAsset Load (0.000414)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00468)
+  [4;35;1mAsset Load (0.000470)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00174)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mAsset Load (0.000484)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00151)
+Rendered layouts/_header (0.00069)
+Completed in 0.06658 (15 reqs/sec) | Rendering: 0.04818 (72%) | DB: 0.00618 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:39:23) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01560 (64 reqs/sec) | Rendering: 0.01265 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:39:29) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000472)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003331)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000606)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01033)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00105)
+  [4;35;1mUser Load (0.000505)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00160)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00069)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00106)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00128)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00101)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00102)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mAsset Load (0.000398)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00454)
+  [4;36;1mAsset Load (0.000444)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00149)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;36;1mAsset Load (0.000579)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00203)
+Rendered layouts/_header (0.00072)
+Completed in 0.06785 (14 reqs/sec) | Rendering: 0.04924 (72%) | DB: 0.00634 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:39:30) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01522 (65 reqs/sec) | Rendering: 0.01227 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:39:38) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000578)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.078788)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000518)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00973)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mUser Load (0.000465)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00157)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00114)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00092)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00075)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00083)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00094)
+  [4;35;1mAsset Load (0.000561)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00517)
+  [4;35;1mAsset Load (0.000443)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00150)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00099)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mAsset Load (0.000454)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00141)
+Rendered layouts/_header (0.00072)
+Completed in 0.14158 (7 reqs/sec) | Rendering: 0.04784 (33%) | DB: 0.08181 (57%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:39:39) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01477 (67 reqs/sec) | Rendering: 0.01206 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:39:43) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000489)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003595)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000565)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01029)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00112)
+  [4;35;1mUser Load (0.000490)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00182)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00095)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00115)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00126)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00121)
+  [4;36;1mAsset Load (0.000448)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00480)
+  [4;36;1mAsset Load (0.000413)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00088)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;36;1mAsset Load (0.000449)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00135)
+Rendered layouts/_header (0.00068)
+Completed in 0.06702 (14 reqs/sec) | Rendering: 0.04812 (71%) | DB: 0.00645 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:39:43) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01543 (64 reqs/sec) | Rendering: 0.01253 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:40:14) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000438)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003394)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000491)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00995)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;36;1mUser Load (0.000518)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00189)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00102)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00074)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00082)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mAsset Load (0.000921)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00518)
+  [4;35;1mAsset Load (0.000434)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00143)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00081)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00086)
+  [4;35;1mAsset Load (0.000538)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00182)
+Rendered layouts/_header (0.00077)
+Completed in 0.06524 (15 reqs/sec) | Rendering: 0.04658 (71%) | DB: 0.00673 (10%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:40:15) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01617 (61 reqs/sec) | Rendering: 0.01308 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:40:29) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000398)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;36;1mMessage Load (0.003314)[0m   [0;1mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;35;1mUser Load (0.000619)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.08974)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00100)
+  [4;35;1mUser Load (0.000499)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00165)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00102)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00079)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00085)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00087)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00073)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00095)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00083)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00089)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00090)
+  [4;36;1mAsset Load (0.000456)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00484)
+  [4;36;1mAsset Load (0.000456)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00163)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00091)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00075)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00072)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00071)
+  [4;36;1mAsset Load (0.000449)[0m   [0;1mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00140)
+Rendered layouts/_header (0.00078)
+Completed in 0.14339 (6 reqs/sec) | Rendering: 0.12569 (87%) | DB: 0.00619 (4%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:40:29) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.01512 (66 reqs/sec) | Rendering: 0.01232 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
+
+
+Processing ChatController#index (for 127.0.0.1 at 2008-03-07 11:40:56) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvMDoMdXNlcl9pZGkGIgpmbGFzaElDOidBY3Rpb25D%0Ab250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--b1705c34fe7c0a193b8df7c3364f7f371866afe3
+  Parameters: {"action"=>"index", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000404)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering chat/index
+  [4;35;1mMessage Load (0.003683)[0m   [0mSELECT * FROM messages ORDER BY created_on DESC LIMIT 45[0m
+  [4;36;1mUser Load (0.000543)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.01028)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00093)
+  [4;36;1mUser Load (0.000538)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00172)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00088)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00080)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00133)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00122)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00115)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00086)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00077)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00084)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00078)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00078)
+  [4;35;1mAsset Load (0.000482)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00619)
+  [4;35;1mAsset Load (0.000611)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00371)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00159)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00076)
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00068)
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00070)
+  [4;35;1mAsset Load (0.000524)[0m   [0mSELECT * FROM assets WHERE (assets."id" = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00150)
+Rendered layouts/_header (0.00068)
+Completed in 0.07209 (13 reqs/sec) | Rendering: 0.05432 (75%) | DB: 0.00679 (9%) | 200 OK [http://localhost/]
+
+
+Processing StylesheetsController#base (for 127.0.0.1 at 2008-03-07 11:40:56) [GET]
+  Parameters: {"format"=>"css", "action"=>"base", "controller"=>"stylesheets"}
+Rendering stylesheets/base
+Completed in 0.08910 (11 reqs/sec) | Rendering: 0.01258 (14%) | DB: 0.00000 (0%) | 200 OK [http://localhost/stylesheets/base.css]
