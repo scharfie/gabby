@@ -14,6 +14,10 @@ class ChatController < ApplicationController
     render :nothing => true
   end
   
+  def recent
+    render :inline => '<%= recent_messages(:break => true) %>'
+  end
+  
   def login
     login_to_chat
     render :nothing => true

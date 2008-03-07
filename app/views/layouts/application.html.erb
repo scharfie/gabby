@@ -2,92 +2,21 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>gabby</title>
-  <%= javascript_include_tag 'prototype', :juggernaut %>
-  <style type="text/css" media="screen">
-    body {
-      background: #e5e5e5;
-      font: normal 76% Lucida Grande;
-    }
-    
-    #chatwindow { width: 550px; padding: 25px; background: #fff;}
-    #chatbox { height: 50px; margin-top: 10px;}
-    
-    
-    #chat td {
-      xpadding: 4px;
-    }
-    
-    td {
-      background: #fff;
-      color: #333;
-      font-size: 12px;
-      margin: 0;
-      padding: 0;
-    }
-    
-    tr.new td,
-    tr.sys td {
-      border-top: dotted 1px #ccc;
-    }
-    
-    pre {
-      background: #eee;
-      padding: 10px;
-      margin-right: 15px;
-      border: dotted 1px #777;
-    }
-    
-    table {
-      border-collapse: collapse;
-      border: 0;
-      width: 100%;
-    }
-    
-    td.from {
-      border-right: solid 1px #ccc; 
-      padding: 5px 15px 5px 5px;
-      width: 80px;
-      text-align: right;
-    }
-    
-    td.from div.from {
-      font-weight: bold;
-    }
-    
-    td.message {
-      padding-left: 15px;
-    }
-    
-    td.time {
-      width: 50px;
-    }
-    
-    div.time {
-      font-size: 9px;
-      color: #999;
-    }
-
-    tr.sys td {
-      background: #eee;
-      font-weight: bold;
-    }
-    
-    tr.sys td.message {
-      text-align: center;
-    }
-    
-    div.message {
-      padding: 2px 0;
-    }
-  </style>
+  <%#= javascript_include_tag 'prototype', :juggernaut %>
+  <%= stylesheet_link_tag 'base' %>
 </head>
 <body>
 <div id="container">
   <div id="header">
+    <div class="app">
+      <h1>gabby<span class="slogan">run your mouth</span></h1>
+    </div>
+    <div class="session">
     <% if logged_in? %>
       Logged in as: <%= current_user.login  %>
       <%= link_to 'Logout', logout_url %>
     <% end %>
+    </div>  
   </div>  
   <div id="body">
     <%= yield %>

@@ -1,5 +1,5 @@
 module ChatHelper
-  def previous_messages
+  def recent_messages(options={})
     # messages = []
     # messages << { :from => 'Ryan H.',  :message => "what's happening with slate?"}
     # messages << { :from => 'Chris S.', :message => "we'll be open-sourcing it soon..."}
@@ -9,7 +9,7 @@ module ChatHelper
     # messages << { :from => 'Chris S.', :message => 'File: <a href="#">slate_wireframes.pdf</a>' }
     
     out = []
-    for m in Message.recent(5)
+    for m in Message.recent(15)
       out << render(:partial => 'message', :object => m)
       params[:previous_speaker] = m.user_id
     end  
@@ -20,6 +20,11 @@ module ChatHelper
     # 
     # m = Message.system('swein joined the chat.')
     # out << render(:partial => 'message', :object => m)
+    
+    if options[:break]
+      m = Message.system('You joined the chat')
+      out << render(:partial => 'message', :object => m)
+    end
     
     params[:previous_speaker] = nil
     out

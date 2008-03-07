@@ -75,6 +75,8 @@ var Juggernaut = Class.create({
   },
   
   connected: function(e) {
+    this.onConnected();
+    
     var handshake = new Hash();
     handshake.set('command', 'subscribe');
     if(this.options.session_id) handshake.set('session_id', this.options.session_id);
@@ -169,5 +171,10 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
       }
     }
   }
-
+  
+  ,
+  onConnected: function() {
+    new Ajax.Updater('chat', '/chat/recent');
+    $('chatbox').show();
+  }
 });

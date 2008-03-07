@@ -1,0 +1,158 @@
+html,body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background: #e5e5e5;
+  font: normal 76% Lucida Grande;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+#header {
+  background: #226177;
+  background: #4F5E85;
+  background: #558;
+  padding: 0;
+  color: #fff;
+  width: 100%;
+  display: table;
+  height: 50px;
+  xposition: fixed;
+  z-index: 100;
+  xmargin-top: -10px;
+}
+
+#header .slogan {
+  position: relative;
+  font-size: 0.5em;
+  top: -0.25em;
+  padding: 0.25em 0.5em;
+  border-left: solid 1px #88b;
+  margin-left: 0.5em;
+}
+
+#header .app, 
+#header .session {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+#header .session {
+  text-align: right;
+}
+
+
+#header a {
+  color: #bbe;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+#body {
+  margin: 10px;
+}
+
+#chatwindow {
+  padding: 10px; 
+  background: #fff;
+  xposition: absolute;
+  xbottom: 120px;
+  xright: 10px;
+  xleft: 10px;
+  xtop: 60px;
+  xoverflow: auto;
+  padding-bottom: 120px;
+}
+
+#chatbox { 
+  height: 100px; 
+  margin-top: 10px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+#chatbox textarea#message {
+  width: 100%;
+  height: 100px;
+}
+
+td {
+  background: #fff;
+  color: #333;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+tr.new td,
+tr.sys td {
+  border-top: dotted 1px #ccc;
+}
+
+pre {
+  background: #eee;
+  padding: 10px;
+  margin-right: 15px;
+  border: dotted 1px #777;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+}
+
+td.from {
+  border-right: solid 1px #ccc; 
+  padding: 5px 15px 5px 5px;
+  width: 80px;
+  text-align: right;
+}
+
+td.from div.from {
+  font-weight: bold;
+}
+
+td.message {
+  padding-left: 15px;
+}
+
+td.time {
+  width: 50px;
+}
+
+div.time {
+  font-size: 9px;
+  color: #999;
+}
+
+tr.sys td {
+  background: #eee;
+  font-weight: bold;
+}
+
+tr.sys td.message {
+  text-align: center;
+}
+
+div.message {
+  padding: 2px 0;
+}
+
+img.glyph {
+  vertical-align: text-bottom;
+}

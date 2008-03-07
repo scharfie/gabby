@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
-  protect_from_forgery # :secret => '12d2e0a7215f0f256b4655c623494982'
+  # protect_from_forgery # :secret => '12d2e0a7215f0f256b4655c623494982'
   
 protected
   def render_juggernaut_message(message)

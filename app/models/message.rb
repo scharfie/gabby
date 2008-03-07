@@ -17,9 +17,13 @@ class Message < ActiveRecord::Base
     end
   end
   
+  # def message
+  #   system? ? "- #{self[:message]} -" : self[:message]
+  # end
+  
   # Returns who the message is from
   def from
-    system? ? 'System' : (user.try(:short_name) || '(unknown)')
+    system? ? '' : (user.try(:short_name) || '(unknown)')
   end
   
   # Returns true if this is a system message
