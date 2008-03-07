@@ -1,0 +1,16 @@
+  <div id="header">
+    <div class="app">
+      <table>
+        <tr>
+          <td class="appname">gabby</td>
+          <td class="slogan">go ahead, run your mouth</td>
+        </tr>
+      </table>    
+    </div>
+    <div class="session">
+    <% if logged_in? %>
+      Logged in as: <%= current_user.login  %>
+      <%= link_to 'Logout', logout_url %>
+    <% end %>
+    </div>  
+  </div>  

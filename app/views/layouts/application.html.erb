@@ -6,32 +6,25 @@
   <%= stylesheet_link_tag 'base' %>
 </head>
 <body>
-<div id="container">
-  <div id="header">
-    <div class="app">
-      <table>
-        <tr>
-          <td class="appname">gabby</td>
-          <td class="slogan">go ahead, run your mouth</td>
-        </tr>
-      </table>    
-    </div>
-    <div class="session">
-    <% if logged_in? %>
-      Logged in as: <%= current_user.login  %>
-      <%= link_to 'Logout', logout_url %>
-    <% end %>
-    </div>  
-  </div>  
-  <div id="body">
-    <%= yield %>
-  </div>
-  <div id="sidebar">
-    
-  </div>
-  <div id="footer">
-    
-  </div>
-</div>  
+  <table id="main">
+    <tr>
+      <td colspan="2">
+        <%= render :partial => 'layouts/header' %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= yield %>
+      </td>
+      <td>
+        <%= yield :sidebar %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= yield :chatbox %>
+      </td>
+    </tr>
+  </table>    
 </body>
 </html>
