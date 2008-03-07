@@ -1,16 +1,19 @@
 <%= juggernaut(:client_id => current_user.id, :debug => false) %>
 <div id="chatwindow">
-  <table id="chat">
-    <tr class="">
-      <td colspan="3">
-        <%#= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
-      </td>  
-    </tr>  
-    <%= recent_messages %>
-  </table>
+  <div class="chat">
+    <table id="chat">
+      <tr class="">
+        <td colspan="3">
+          <%#= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
+        </td>  
+      </tr>  
+      <%= recent_messages %>
+    </table>
+  </div>  
+  <div class="bottom"></div>
 </div>
 
-<div id="chatbox" style="xdisplay: none">
+<div id="chatbox" style="display: none">
   <%= form_remote_tag(
         :url => { :action => :new },
         :complete => "$('message').value = ''", :id => 'chatbox-f' ) %>

@@ -2,14 +2,19 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>gabby</title>
-  <%#= javascript_include_tag 'prototype', :juggernaut %>
+  <%= javascript_include_tag 'prototype', :juggernaut %>
   <%= stylesheet_link_tag 'base' %>
 </head>
 <body>
 <div id="container">
   <div id="header">
     <div class="app">
-      <h1>gabby<span class="slogan">run your mouth</span></h1>
+      <table>
+        <tr>
+          <td class="appname">gabby</td>
+          <td class="slogan">go ahead, run your mouth</td>
+        </tr>
+      </table>    
     </div>
     <div class="session">
     <% if logged_in? %>

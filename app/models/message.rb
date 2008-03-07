@@ -23,7 +23,7 @@ class Message < ActiveRecord::Base
   
   # Returns who the message is from
   def from
-    system? ? '' : (user.try(:short_name) || '(unknown)')
+    user.try(:short_name) || (system? ? '(SYSTEM)' : '(unknown)')
   end
   
   # Returns true if this is a system message

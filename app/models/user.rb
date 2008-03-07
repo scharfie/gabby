@@ -81,4 +81,8 @@ public
     return login
     first_name + ' ' + last_name[0..1] + '.'
   end    
+  
+  def system(*args)
+    messages.system(*args)
+  end
 end

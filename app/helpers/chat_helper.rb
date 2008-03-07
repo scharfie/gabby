@@ -22,7 +22,7 @@ module ChatHelper
     # out << render(:partial => 'message', :object => m)
     
     if options[:break]
-      m = Message.system('You joined the chat')
+      m = current_user.system('joined the chat')
       out << render(:partial => 'message', :object => m)
     end
     
