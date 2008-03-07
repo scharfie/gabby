@@ -1,7 +1,7 @@
 module ChatHelper
   def recent_messages(options={})
     out = []
-    for m in Message.recent(45)
+    for m in Message.recent(5)
       out << render(:partial => 'message', :object => m)
       params[:previous_speaker] = m.user_id
     end  
@@ -16,6 +16,9 @@ module ChatHelper
     params[:previous_speaker] = nil
     
     if options[:break]
+      m = timestamp_message
+      out << render(:partial => 'message', :object => m)
+      
       m = current_user.system('joined the chat')
       out << render(:partial => 'message', :object => m)
       out << '<script type="text/javascript">this.juggernaut.onMessage();</script>'
@@ -24,17 +27,29 @@ module ChatHelper
     out
   end
   
+  def timestamp_message
+    Message.timestamp
+  end
+  
   def message_body(message)
     m = message.message
     if message.attachment?
-      'uploaded ' + attachment_link(message.attachment)
+      attachment_html(message.attachment)
     else  
       m =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : m
     end  
   end
   
-  def attachment_link(attachment)
-    link_to(attachment.filename, attachment.public_filename)
+  def attachment_html(attachment)
+    options = {}
+    url = attachment.public_filename
+    out = []
+    out << 'uploaded: ' + link_to(attachment.filename, url)
+
+    if attachment.image?
+      options[:width] = 400 if attachment.width > 400
+      out << '<br />' + link_to(image_tag(url, options), url)
+    end  
   end
   
   def new_speaker?(message)
@@ -51,6 +66,7 @@ module ChatHelper
     classes << 'new' if new_speaker?(message)
     classes << 'sys' if system_message?(message)
     classes << 'notice' if message.notice?
+    classes << 't' if message.timestamp?
     classes.join(' ')
   end
 end

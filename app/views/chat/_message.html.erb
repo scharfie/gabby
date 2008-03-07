@@ -8,7 +8,7 @@
     <div class="message"><%= message_body message %></div>
   </td>
   <td class="time">
-    <% if new_speaker?(message) || system_message?(message) %>
+    <% if !message.timestamp? && (new_speaker?(message) || message.system?) %>
     <div class="time">
       <%= message.created_on.eztime(chat_time_format) %>
     </div>

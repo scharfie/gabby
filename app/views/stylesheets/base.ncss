@@ -120,7 +120,7 @@ tr.sys td {
 }
 
 pre {
-  background: #eee;
+  background: #f5f5f5;
   padding: 10px;
   margin-right: 15px;
   border: dotted 1px #777;
@@ -157,7 +157,7 @@ td.message {
 td.time {
   width: 50px;
   vertical-align: top;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 div.time {
@@ -167,30 +167,43 @@ div.time {
 }
 
 tr.me td.from {
-  xbackground: #ffe;
   background: url(/images/me-bg.png) repeat-y top right;
-  border-right: solid 1px #777;
+  background: #FFFFE8;
 }
 
-tr.sys td {
-  background: #eee;
+tr.sys td,
+tr.sys td.from {
+  background: #f5f5f5;
   font-weight: bold;
-  
-  .message {
-    xtext-align: center;
-  }  
 }
 
 tr.notice td {
-  background: #cedeef;
-  background: #E6EEF7;
+  xbackground: #E6EEF7;
+}
+
+tr.t td {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-right: none;
+  background: none !important;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #777;
 }
 
 div.message {
   padding: 2px 0;
 }
 
-img.glyph {
-  vertical-align: text-bottom;
+td.message a {
+  font-weight: bold;
+  color: blue;
+}
+
+img {
   border: none;
+  
+  .glyph {
+    vertical-align: text-bottom;
+  }  
 }

@@ -4,16 +4,16 @@
     <table id="chat">
       <tr class="">
         <td colspan="3">
-          <%#= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
+          <%= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
         </td>  
       </tr>  
-      <%= recent_messages %>
+      <%#= recent_messages %>
     </table>
   </div>  
   <div class="bottom"></div>
 </div>
 
-<div id="chatbox" style="display: none">
+<div id="chatbox" style="display: xnone">
   <%= form_remote_tag(
         :url => { :action => :new },
         :complete => "$('message').value = ''", :id => 'chatbox-f' ) %>
@@ -28,6 +28,10 @@
     if (e.keyCode == 13 && e.shiftKey == false) {
       $('message').form.onsubmit();
       return false;
-    }  
+    } else if (e.keyCode == 9) {
+      // complete person's name...
+    } else {
+      console.log(e);
+    }
   });
 </script>

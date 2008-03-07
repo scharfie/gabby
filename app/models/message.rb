@@ -1,6 +1,7 @@
 class Message < ActiveRecord::Base
   attr_accessor :system
   attr_accessor :notice
+  attr_accessor :timestamp
   
   belongs_to :user
   belongs_to :asset
@@ -16,6 +17,14 @@ class Message < ActiveRecord::Base
   def self.system(message)
     returning self.new(:system => true, :message => message) do |e|
       e.created_on = Time.now
+      e.readonly!
+    end
+  end
+  
+  def self.timestamp
+    returning self.new(:system => true, :timestamp => true) do |e|
+      e.created_on = Time.now
+      e.message = e.created_on.eztime(':nday, :nmonth :day:ordinal, :year')
       e.readonly!
     end
   end
@@ -36,7 +45,7 @@ class Message < ActiveRecord::Base
   
   # Returns who the message is from
   def from
-    user.try(:short_name) || (system? ? '(SYSTEM)' : '(unknown)')
+    user.try(:short_name) || (system? ? '' : '(unknown)')
   end
   
   # Returns true if this is a system message
@@ -48,7 +57,11 @@ class Message < ActiveRecord::Base
     @notice || attachment?
   end
   
-  def created_on
-    self[:created_on] || Time.now
+  def timestamp?
+    @timestamp
   end
+  
+  # def created_on
+  #   self[:created_on] || Time.now
+  # end
 end
