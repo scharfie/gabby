@@ -9,15 +9,17 @@
   <%= form_remote_tag(
         :url => { :action => :new },
         :complete => "$('message').value = ''" ) %>
-    <%= text_area_tag( 'message', '', { :id => 'message'} ) %>
-    <%= text_field_tag 'previous_speaker', params[:previous_speaker] %>
-    <%= text_field_tag 'from', 'Chris S.' %>
+    <%= hidden_field_tag 'previous_speaker' %>
+    <%= text_area_tag( 'message', '', { :rows => 4, :cols => 60, :id => 'message'} ) %>
     <%= submit_tag "Add" %>
   </form>
 </div>  
 
 <script type="text/javascript" charset="utf-8">
   Event.observe($('message'), 'keydown', function(e) {
-    if (e.keyCode == 13 && e.shiftKey == false) $('message').form.onsubmit();
+    if (e.keyCode == 13 && e.shiftKey == false) {
+      $('message').form.onsubmit();
+      return false;
+    }  
   });
 </script>

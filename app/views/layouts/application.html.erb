@@ -25,7 +25,8 @@
       padding: 0;
     }
     
-    tr.new_speaker td {
+    tr.new td,
+    tr.sys td {
       border-top: dotted 1px #ccc;
     }
     
@@ -63,15 +64,21 @@
     
     div.time {
       font-size: 9px;
-      color: #777;
+      color: #999;
     }
 
-    tr.sysmsg td.message {
+    tr.sys td {
       background: #eee;
-      text-align: center;
       font-weight: bold;
     }
     
+    tr.sys td.message {
+      text-align: center;
+    }
+    
+    div.message {
+      padding: 2px 0;
+    }
   </style>
 </head>
 <body>

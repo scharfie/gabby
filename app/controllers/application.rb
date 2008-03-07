@@ -11,15 +11,26 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => '12d2e0a7215f0f256b4655c623494982'
   
-  def logout_of_chat
+protected
+  def render_juggernaut_message(message)
     render :juggernaut do |page|
-      page.insert_html :bottom, 'chat', :partial => 'chat/logout'
+      page.insert_html :bottom, 'chat', :partial => 'chat/message', 
+        :object => message || @message
+      page[:previous_speaker].value = message.user_id  
     end
   end
   
-  def login_to_chat
-    render :juggernaut do |page|
-      page.insert_html :bottom, 'chat', :partial => 'chat/login'
-    end
+  def logout_of_chat
+    render_juggernaut_message Message.system(
+      current_user.login + ' left the chat.'
+    )
   end
+  
+  def login_to_chat
+    render_juggernaut_message Message.system(
+      current_user.login + ' joined the chat.'
+    )
+  end
+  
+  
 end

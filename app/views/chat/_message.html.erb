@@ -1,12 +1,14 @@
-<tr class="<%= new_speaker?(message) ? 'new_speaker' : nil %>">
+<tr class="<%= message_class(message) %>">
   <td class="from">
-    <div class="from"><%= message.from %></div>
+    <% if new_speaker?(message) || system_message?(message) %>
+      <div class="from"><%= message.from %></div>
+    <% end %>  
   </td>
   <td class="message">
-    <div class="message"><%= message_html message.message %></div>
+    <div class="message"><%= message_body message %></div>
   </td>
   <td class="time">
-    <% if new_speaker?(message) %>
+    <% if new_speaker?(message) || system_message?(message) %>
     <div class="time">
       <%= message.created_on.eztime(chat_time_format) %>
     </div>

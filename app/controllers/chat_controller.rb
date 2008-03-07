@@ -4,25 +4,23 @@ class ChatController < ApplicationController
 	
   def new
     @message = current_user.messages.create!(:message => params[:message])
+    render_juggernaut_message @message
     
-    render :juggernaut do |page|
-      page.insert_html :bottom, 'chat', :partial => 'message'
-      page[:previous_speaker].value = current_user.id
-    end
+    # render :juggernaut do |page|
+    #       page.insert_html :bottom, 'chat', :partial => 'message'
+    #       page[:previous_speaker].value = current_user.id
+    #     end
     
     render :nothing => true
   end
   
   def login
-    
+    login_to_chat
     render :nothing => true
   end
 
   def logout
-    render :juggernaut do |page|
-      page.call :alert, "User logged out (#{current_user.login})"
-    end
-    
+    logout_of_chat
     render :nothing => true
   end
 end

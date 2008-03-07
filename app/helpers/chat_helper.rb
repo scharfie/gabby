@@ -9,18 +9,38 @@ module ChatHelper
     # messages << { :from => 'Chris S.', :message => 'File: <a href="#">slate_wireframes.pdf</a>' }
     
     out = []
-    for m in Message.recent
+    for m in Message.recent(5)
       out << render(:partial => 'message', :object => m)
       params[:previous_speaker] = m.user_id
     end  
+    
+    # system message test
+    # m = Message.system('mguymon left the chat.')
+    # out << render(:partial => 'message', :object => m)
+    # 
+    # m = Message.system('swein joined the chat.')
+    # out << render(:partial => 'message', :object => m)
+    
+    params[:previous_speaker] = nil
     out
   end
   
-  def message_html(message)
-    message =~ /\n/ ? '<pre>' + message.chomp + '</pre>' : message
+  def message_body(message)
+    (m=message.message) =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : m
   end
   
   def new_speaker?(message)
     params[:previous_speaker].try(:to_i) != message.user_id
+  end
+  
+  def system_message?(message)
+    message.system?
+  end
+  
+  def message_class(message)
+    classes = []
+    classes << 'new' if new_speaker?(message)
+    classes << 'sys' if system_message?(message)
+    classes.join(' ')
   end
 end
