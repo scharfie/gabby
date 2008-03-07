@@ -1,2 +1,2 @@
 script/juggernaut &
-script/server -p 5000 $*
+mongrel_rails start -p 5000 $*
