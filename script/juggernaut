@@ -1,1 +1,1 @@
-juggernaut -c juggernaut.yml
+vendor/juggernaut/bin/juggernaut -c juggernaut.yml
