@@ -38,4 +38,8 @@ class ChatController < ApplicationController
   def broadcast
     render :nothing => true, :status => 200
   end
+
+  def subscribe
+    render :nothing => true, :status => 200
+  end
 end
