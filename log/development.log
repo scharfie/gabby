@@ -16321,3 +16321,32 @@ Processing ChatController#new (for 127.0.0.1 at 2008-03-06 23:52:40) [POST]
   [4;36;1mMessage Create (0.000358)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-06 23:52:40', 'cool', '2008-03-06 23:52:40', 2)[0m
 Rendered chat/_message (0.00032)
 Completed in 0.02263 (44 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00073 (3%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-07 08:15:17) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMmE2OTY1MDJiZjNjZGViZTg1%0AYWJlMmE4Y2MxMWE4ODg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4c3c48b147a8500db9609da419efcbba8bfd7e6d
+  Parameters: {"message"=>"so then...", "commit"=>"Add", "previous_speaker"=>"2", "authenticity_token"=>"ba7c4b62a0fed1c117f915ad5703a4032053aef0", "action"=>"new", "controller"=>"chat"}
+  [4;35;1mUser Load (0.000345)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;36;1mMessage Create (0.000410)[0m   [0;1mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-07 08:15:17', 'so then...', '2008-03-07 08:15:17', 1)[0m
+  [4;35;1mUser Load (0.000664)[0m   [0mSELECT * FROM users WHERE (users."id" = 1) [0m
+Rendered chat/_message (0.00351)
+Completed in 0.05998 (16 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00142 (2%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-07 08:15:23) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMmE2OTY1MDJiZjNjZGViZTg1%0AYWJlMmE4Y2MxMWE4ODg6DHVzZXJfaWRpBiIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--4c3c48b147a8500db9609da419efcbba8bfd7e6d
+  Parameters: {"message"=>"you are still here?", "commit"=>"Add", "previous_speaker"=>"1", "authenticity_token"=>"ba7c4b62a0fed1c117f915ad5703a4032053aef0", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000330)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 1) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000378)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-07 08:15:23', 'you are still here?', '2008-03-07 08:15:23', 1)[0m
+Rendered chat/_message (0.00036)
+Completed in 0.05974 (16 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00071 (1%) | 200 OK [http://localhost/chat/new]
+
+
+Processing ChatController#new (for 127.0.0.1 at 2008-03-07 08:15:29) [POST]
+  Session ID: BAh7CToOcmV0dXJuX3RvMDoMY3NyZl9pZCIlMWEzMjViNGYzZTE0OTRmYTA4%0AMjIyZThiNGIyNGU1ZDk6DHVzZXJfaWRpByIKZmxhc2hJQzonQWN0aW9uQ29u%0AdHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--57ccdca3e6cb67e8761d1109c1c785e0951f8275
+  Parameters: {"message"=>"yeah, up late working", "commit"=>"Add", "previous_speaker"=>"1", "authenticity_token"=>"a8b3772139d05433f897b012a35cfc438983277e", "action"=>"new", "controller"=>"chat"}
+  [4;36;1mUser Load (0.000339)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) LIMIT 1[0m
+  [4;35;1mMessage Create (0.000385)[0m   [0mINSERT INTO messages ("created_on", "message", "updated_on", "user_id") VALUES('2008-03-07 08:15:29', 'yeah, up late working', '2008-03-07 08:15:29', 2)[0m
+  [4;36;1mUser Load (0.000661)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 2) [0m
+Rendered chat/_message (0.00346)
+Completed in 0.06017 (16 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00138 (2%) | 200 OK [http://localhost/chat/new]
