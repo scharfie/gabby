@@ -3,5 +3,9 @@
     :host: gabby.sprocket.slackworks.com
     :environment: :development
 
+  - :port: 5001
+    :host: gabby.sprocket.slackworks.com
+    :environment: :production
+
 # :allowed_ips: 
 #     - 127.0.0.1
