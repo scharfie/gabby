@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(:version => 2) do
     t.datetime "created_on"
     t.datetime "updated_on"
   end
+  
+  create_table "gabbers", :force => true do |t|
+    t.integer :user_id
+    t.integer :status
+    t.string  :message
+    t.timestamps
+  end
 
   create_table "messages", :force => true do |t|
     t.integer "user_id"

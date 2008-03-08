@@ -1,9 +1,12 @@
 require 'digest/sha1'
 class User < ActiveRecord::Base
+  delegate :online!, :offline!, :away!, :to => :gabber
+  
   attr_accessor :previous_nicknames
   attr_accessor :password
 
   has_many :messages
+  has_one :gabber
   
 
   validates_presence_of     :login, :email
@@ -105,6 +108,10 @@ public
     login
   end
   
+  def gabber
+    @gabber ||= Gabber.grab(self)
+  end
+  
   def change_nickname!(nick)
     (@previous_nicknames ||= []) << nickname
     self.update_attribute(:nickname, nick)
@@ -114,4 +121,5 @@ public
   def previous_nickname
     previous_nicknames.last
   end
+  
 end

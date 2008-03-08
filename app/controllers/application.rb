@@ -23,12 +23,14 @@ protected
   end
   
   def logout_of_chat
+    current_user.offline!
     render_juggernaut_message current_user.system(
       'left the chat'
     )
   end
   
   def login_to_chat
+    current_user.online!
     render_juggernaut_message current_user.system(
       'joined the chat'
     )
