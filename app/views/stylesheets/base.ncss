@@ -22,20 +22,27 @@ h1 {
   font-size: 1em;
 }
 
+h2 {
+  margin: 0.5em 0 0 0;
+  font-size: 1.2em;
+}
+
 #header {
   background: #226177;
   background: #4F5E85;
   background: #558;
-  background: #222;
-  padding: 0;
+  background: #222 url(/images/bottom-bg.gif) repeat-x bottom left;
+  
   color: #fff;
   width: 100%;
   position: fixed;
   z-index: 100;
   padding: 5px 0;
+  xborder-bottom: solid 2px #777;
+  padding-bottom: 10px;
 
   table {
-    height: 20px;
+    height: 22px;
   }  
 
   td {
@@ -45,14 +52,11 @@ h1 {
     .appname {
       text-align: right;
       font-weight: bold;
-      width: 90px;
-      padding-right: 15px;
+      width: 1px;
+      padding: 0px 5px 0 10px;
     }
 
     .slogan {
-      padding-left: 15px;
-      border-left: solid 1px #555;
-      margin-left: 0.5em;
       color: #CBCBDB;
       color: #777;
     }
@@ -69,11 +73,12 @@ h1 {
 }
 
 #chatwindow {
-  background: #fff;
-  padding-top: 30px;
+  background: #fff url(/images/right-bg.gif) repeat-y top right;
+  margin-top: 40px;
+  padding: 0;
 
   div.chat {
-    padding: 20px 10px 10px;   
+    padding: 10px 20px 10px 10px;  
   }
 
   div.bottom {
@@ -87,7 +92,7 @@ h1 {
   position: fixed;
   bottom: 00px;
   left:   00px;
-  right:  00px;
+  right:  245px;
   padding: 15px 10px 0 10px;
   background: url(/images/chatbox-bg.png) repeat-x 0 0;
 
@@ -99,11 +104,30 @@ h1 {
 
 td#sidebar {
   padding: 35px 10px;
+  width: 200px;
   background: none;
   vertical-align: top;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  div.panel {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1em;
+    background: #ddd;
+    padding: 3px 5px;
+    margin-bottom: 0.5em;
+    border-bottom: solid 1px #ccc;
+  }
 }
 
 td#body {
+  vertical-align: top;
   padding-left: 10px;
   background: none;
 }
@@ -181,7 +205,6 @@ tr.sys td.from {
 
 tr.notice td {
   background: #E6EEF7 !important;
-  font-size: 0.7em;
 }
 
 tr.time td {
@@ -203,14 +226,15 @@ td.message a {
   color: blue;
 }
 
-td.toolbar {
-  padding-top: 7px;
-  vertical-align: middle;
-}
-
 img {
   border: none;
+  padding: 5px 0;
   .glyph {
     vertical-align: text-bottom;
   }  
+}
+
+p.wip {
+  background: #FFFFE8;
+  padding: 3px;
 }

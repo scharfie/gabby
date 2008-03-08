@@ -5,11 +5,6 @@
       <td class="slogan">go ahead, run your mouth</td>
       <td class="toolbar">
         <%#= link_to glyph('application_get'), '#' %>
-        <% form_for(:asset, :url => { :controller => 'assets', :action => "create" }, :html => { :multipart => true, :target => 'upload_frame' }) do |form| %>        
-          <%= form.file_field :uploaded_data, :size => 20 %>
-          <%= submit_tag 'Upload' %>
-        <% end %>
-        <iframe id='upload_frame' name="upload_frame" style="width:1px;height:1px;border:0px;" src="about:blank"></iframe>
       </td>
       <td class="session">
         <% if logged_in? %>

@@ -7,7 +7,7 @@
           <%= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
         </td>  
       </tr>  
-      <%#= recent_messages %>
+      <% recent_messages %>
     </table>
   </div>  
   <div class="bottom"></div>
@@ -24,11 +24,26 @@
 </div>  
 
 <% content_for :sidebar do %>
-  <ul id="gabbers">
-  <% for gabber in Gabber.gabbers %>
-    <li><%= gabber.user.nickname %> (<%= gabber.status %>)</li>
-  <% end %>
-  </ul>
+  <div class="panel">
+    <h2>Gabbers</h2>
+    <p class="wip">
+      This feature is still a work-in-progress.
+    </p>
+    <ul id="gabbers">
+    <% for gabber in Gabber.gabbers %>
+      <li><%= gabber.user.nickname %> (<%= gabber.status %>)</li>
+    <% end %>
+    </ul>
+  </div>
+  
+  <div class="panel">
+    <h2>Upload file</h2>
+    <% form_for(:asset, :url => { :controller => 'assets', :action => "create" }, :html => { :multipart => true, :target => 'upload_frame' }) do |form| %>        
+      <%= form.file_field :uploaded_data, :size => 20 %>
+      <%= submit_tag 'Upload' %>
+    <% end %>
+    <iframe id='upload_frame' name="upload_frame" style="width:1px;height:1px;border:0px;" src="about:blank"></iframe>
+  </div>
 <% end %>
 
 <script type="text/javascript" charset="utf-8">
