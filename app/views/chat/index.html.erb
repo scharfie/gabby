@@ -23,6 +23,14 @@
   </form>
 </div>  
 
+<% content_for :sidebar do %>
+  <ul id="gabbers">
+  <% for gabber in Gabber.gabbers %>
+    <li><%= gabber.user.nickname %> (<%= gabber.status %>)</li>
+  <% end %>
+  </ul>
+<% end %>
+
 <script type="text/javascript" charset="utf-8">
   Event.observe($('message'), 'keypress', function(e) {
     m = $('message');
