@@ -24,7 +24,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 if (typeof Prototype == 'undefined') throw("Juggernaut error. Prototype could not be found.");
 if (Prototype.Version < "1.6") throw("Juggernaut error. Prototype 1.6.0 is required.");
 
-var Juggernaut = Class.create({ 
+var Juggernaut = Class.create({
+  timer: null, 
   is_connected: false,
   attempting_to_reconnect: false,
   ever_been_connected: false,
@@ -178,8 +179,10 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
   onConnected: function() {
     var chatter = this;
     new Ajax.Updater('chat', '/chat/recent', {evalScripts:true});
-    
     $('chatbox').show();
+    
+    this.timer = new GabberTimer();
+    this.timer.start();
   }
   
   ,

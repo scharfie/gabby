@@ -33,9 +33,13 @@ module ChatHelper
   
   def message_body(message)
     m = message.message
+    
     if message.attachment?
       attachment_html(message.attachment)
-    else  
+    else
+      m.gsub! /@@([^@]+)@@/, '<code>\1</code>'
+      m.gsub! /([A-Z]{3}-\d+)/, 
+        '<a href="http://issues.igicom.com/browse/\1">\1</a>'
       m =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : auto_link(m)
     end  
   end
@@ -49,7 +53,9 @@ module ChatHelper
     if attachment.image?
       options[:width] = 400 if attachment.width > 400
       out << '<br />' + link_to(image_tag(url, options), url)
-    end  
+    end
+    
+    out 
   end
   
   def new_speaker?(message)
