@@ -30,10 +30,15 @@
       This feature is still a work-in-progress.
     </p>
     <ul id="gabbers">
-    <% for gabber in Gabber.gabbers %>
-      <li><%= gabber.user.nickname %> (<%= gabber.status %>)</li>
-    <% end %>
+      <%= render :partial => 'gabber/gabber', :collection => Gabber.gabbers %>
     </ul>
+  </div>
+  
+  <div class="panel">
+    <h2>Debug</h2>
+    <%= link_to_remote 'Set to idle', :url => '/gabber/idle' %><br />
+    <%= link_to_remote 'Set to online', :url => '/gabber/online' %><br />
+    <%= link_to_remote 'Set to offline', :url => '/gabber/offline' %><br />
   </div>
   
   <div class="panel">
@@ -55,6 +60,7 @@
         return false;
       }
       
+      this.juggernaut.timer.resetIdleStatus();
       $('message').form.onsubmit();
       Event.stop(e);
       return false;

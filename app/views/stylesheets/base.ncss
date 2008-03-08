@@ -112,9 +112,21 @@ div#sidebar {
   right: 10px;
   top: 0;
   
-  ul {
+  ul#gabbers {
     list-style: none;
     padding: 0;
+    
+    li.idle {
+      color: #777;  
+    }
+    
+    li.online {
+      font-weight: bold;
+    }
+    
+    li.offline {
+      display: none;
+    }
   }
   
   div.panel {

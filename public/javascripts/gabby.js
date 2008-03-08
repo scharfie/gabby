@@ -7,6 +7,8 @@ GabberTimer = function() {
 
 GabberTimer.prototype = {
   resetIdleStatus: function() {
+    if (this.is_idle) Gabber.setOnline();
+    
     this.idle_counter = this.idle;
     this.is_idle  = false;
   }
@@ -18,7 +20,7 @@ GabberTimer.prototype = {
       this.idle_counter--;
       if (this.idle_counter <= 0) {
         this.is_idle = true;
-        alert("You are now idle");  
+        Gabber.setIdle();
       } // end if <= 0
     } // end if !idle
   }
@@ -40,4 +42,19 @@ GabberTimer.prototype = {
     window.clearInterval(this.timer_id);
     this.timer_id = null;
   }
+};
+
+Gabber = function() {
+}
+
+Gabber.setIdle = function() {
+  new Ajax.Request('/gabber/idle');
+}
+
+Gabber.setOnline = function() {
+  new Ajax.Request('/gabber/online');
+}
+
+Gabber.setOffline = function() {
+  new Ajax.Request('/gabber/offline');
 }
