@@ -116,7 +116,7 @@ div#sidebar {
     list-style: none;
     padding: 0;
     
-    li.idle {
+    li.idle, li.away {
       color: #777;  
     }
     
@@ -253,6 +253,7 @@ img {
   border: none;
   padding: 5px 0;
   .glyph {
+    padding: 0;
     vertical-align: text-bottom;
   }  
 }

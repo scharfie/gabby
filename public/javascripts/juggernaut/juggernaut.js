@@ -183,6 +183,7 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
     
     this.timer = new GabberTimer();
     this.timer.start();
+    Gabber.setOnline();
   }
   
   ,

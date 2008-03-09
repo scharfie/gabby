@@ -58,3 +58,68 @@ Gabber.setOnline = function() {
 Gabber.setOffline = function() {
   new Ajax.Request('/gabber/offline');
 }
+
+Gabber.names = new Array();
+
+GabberTabCompletion = function(event, textarea) {
+  this.event = event;
+  this.textarea = textarea;
+  this.boundary = 0;
+};
+
+GabberTabCompletion.prototype = {
+  complete: function() {
+    word = this.currentWord();
+    if (match = this.findMatch(word)) {
+      if (this.boundary == 0) {
+        match += ': ';
+      }
+      this.insertText(match.slice(word.length));
+    } // end if
+    
+    Event.stop(this.event);
+  }
+  ,
+  insertText: function(text) {
+    var position = this.textarea.selectionStart;
+    this.textarea.value = 
+      this.textarea.value.substring(0, position) + text + 
+      this.textarea.value.substring(position, this.textarea.value.length);       
+  }
+  ,
+  currentWord: function() {
+    var index = this.textarea.selectionStart;
+    var value = this.textarea.value;
+    var ch    = value[index];
+    
+    if (ch != null && ch != ' ') return;
+    
+    var boundary = 0;
+    for(var i = index; i >= 0; i--) {
+      if (value[i] == ' ' || value[i] == "\n") {
+        boundary = i + 1;
+        break;
+      }
+    }
+    
+    this.boundary = boundary;
+    return value.slice(boundary, index);
+  }
+  ,
+  findMatch: function(word) {
+    var names = Gabber.names;
+    var lowerWord = word.toLowerCase();
+    for(var i = 0; i < names.length; i++) {
+      if (names[i].slice(0, word.length).toLowerCase() == lowerWord) {
+        return names[i];
+      } // end if
+    } // end for
+    
+    return null;
+  }
+}
+
+GabberTabCompletion.complete = function(event, textarea) {
+  var gTC = new GabberTabCompletion(event, textarea);
+  return gTC.complete();
+}

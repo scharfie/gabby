@@ -1,5 +1,7 @@
 class Gabber < ActiveRecord::Base
   delegate :online?, :away?, :offline?, :to => :status
+  delegate :nickname, :to => :user
+  
   belongs_to :user
   
   def self.gabbers

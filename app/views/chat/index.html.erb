@@ -1,4 +1,4 @@
-<%= juggernaut(:client_id => current_user.id, :debug => false) %>
+<%#= juggernaut(:client_id => current_user.id, :debug => false) %>
 <div id="chatwindow">
   <div class="chat">
     <table id="chat">
@@ -44,14 +44,18 @@
   <div class="panel">
     <h2>Upload file</h2>
     <% form_for(:asset, :url => { :controller => 'assets', :action => "create" }, :html => { :multipart => true, :target => 'upload_frame' }) do |form| %>        
-      <%= form.file_field :uploaded_data, :size => 20 %>
-      <%= submit_tag 'Upload' %>
+      <%= form.file_field :uploaded_data, :size => 17, :id => 'file' %>
+      <div style="padding-top: 5px">
+        <%= submit_tag 'Upload' %>
+      </div>
     <% end %>
     <iframe id='upload_frame' name="upload_frame" style="width:1px;height:1px;border:0px;" src="about:blank"></iframe>
   </div>
 <% end %>
 
 <script type="text/javascript" charset="utf-8">
+  Gabber.names = <%= Gabber.gabbers.map(&:nickname).to_json %>;
+  
   Event.observe($('message'), 'keypress', function(e) {
     m = $('message');
     if (e.keyCode == Event.KEY_RETURN && e.shiftKey == false) {
@@ -59,15 +63,14 @@
         Event.stop(e);
         return false;
       }
-      
-      this.juggernaut.timer.resetIdleStatus();
+      window.juggernaut.timer.resetIdleStatus();
       $('message').form.onsubmit();
       Event.stop(e);
       return false;
-    } else if (e.keyCode == 9) {
-      // complete person's name...
+    } else if (e.keyCode == Event.KEY_TAB) {
+      GabberTabCompletion.complete(e, m);
     } else {
-      console.log(e);
+      // console.log(e);
     }
   });
 </script>
