@@ -1,8 +1,8 @@
 class GabberController < ApplicationController
   def idle
-    current_user.away! 'idle'
+    current_user.away!
     render :juggernaut do |page|
-      page["g-#{current_user.id}"].className = 'idle'  
+      page.go_away current_user
     end
     render :nothing => true
   end
@@ -10,8 +10,7 @@ class GabberController < ApplicationController
   def offline
     current_user.offline!
     render :juggernaut do |page|
-      # page["g-#{current_user.id}"].visual_effect :fade
-      page["g-#{current_user.id}"].className = 'offline'
+      page.go_offline current_user
     end
     render :nothing => true
   end
@@ -20,7 +19,7 @@ class GabberController < ApplicationController
   def online
     current_user.online!
     render :juggernaut do |page|
-      page["g-#{current_user.id}"].className = 'online'
+      page.go_online current_user
     end
     render :nothing => true    
   end

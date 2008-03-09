@@ -17,7 +17,11 @@ class ChatController < ApplicationController
       @message = current_user.messages.create!(:message => message)
     end    
     
-    render_juggernaut_message @message
+    render :juggernaut do |page|
+      page.add_message @message
+    end
+    
+    #render_juggernaut_message @message
     render :nothing => true
   end
   

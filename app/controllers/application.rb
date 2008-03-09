@@ -24,17 +24,15 @@ protected
   
   def logout_of_chat
     current_user.offline!
-    render_juggernaut_message current_user.system(
-      'left the chat'
-    )
+    render :juggernaut do |page| 
+      page.go_offline current_user
+    end
   end
   
   def login_to_chat
     current_user.online!
-    render_juggernaut_message current_user.system(
-      'joined the chat'
-    )
+    render :juggernaut do |page| 
+      page.go_online current_user
+    end
   end
-  
-  
 end

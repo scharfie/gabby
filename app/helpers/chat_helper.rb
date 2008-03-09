@@ -18,9 +18,6 @@ module ChatHelper
     if options[:break]
       m = timestamp_message
       out << render(:partial => 'message', :object => m)
-      
-      m = current_user.system('joined the chat')
-      out << render(:partial => 'message', :object => m)
       out << '<script type="text/javascript">this.juggernaut.onMessage();</script>'
     end
 

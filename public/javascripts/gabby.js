@@ -1,5 +1,5 @@
 GabberTimer = function() {
-  this.idle = 15; // number of minutes before idle
+  this.idle = 1; // number of minutes before idle
   this.idle_counter = this.idle;
   this.is_idle  = false;
   this.timer_id = null;

@@ -63,7 +63,9 @@
         Event.stop(e);
         return false;
       }
+      
       window.juggernaut.timer.resetIdleStatus();
+      
       $('message').form.onsubmit();
       Event.stop(e);
       return false;
