@@ -36,7 +36,11 @@ module ApplicationHelper
 
     page.gabber(user).visual_effect :highlight
     page.gabber(user).className = 'online'
-    page.add_message user.system('joined the chat')
+    if user.gabber.previous_status.offline?
+      page.add_message user.system('joined the chat')
+    else
+      page.add_message user.system('came back')
+    end    
   end
   
   def go_away(user)

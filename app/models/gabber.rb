@@ -2,6 +2,7 @@ class Gabber < ActiveRecord::Base
   delegate :online?, :away?, :offline?, :to => :status
   delegate :nickname, :to => :user
   
+  attr_accessor :previous_status
   belongs_to :user
   
   def self.gabbers
@@ -16,15 +17,22 @@ class Gabber < ActiveRecord::Base
     @gs ||= GabberStatus.new(self[:status])
   end
   
+  def previous_status
+    @previous_status ||= GabberStatus.new(GabberStatus::OFFLINE)
+  end
+  
   def offline!
+    self.previous_status = status
     update_attributes :status => GabberStatus::OFFLINE, :message => nil
   end
   
   def online!
+    self.previous_status = status
     update_attributes :status => GabberStatus::ONLINE, :message => nil
   end
   
   def away!(msg=nil)
+    self.previous_status = status
     update_attributes :status => GabberStatus::AWAY, :message => msg
   end
 end
