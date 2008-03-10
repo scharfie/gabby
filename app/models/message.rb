@@ -1,6 +1,6 @@
 class Message < ActiveRecord::Base
-  attr_accessor :system
-  attr_accessor :notice
+  # attr_accessor :system
+  # attr_accessor :notice
   attr_accessor :timestamp
   
   belongs_to :user
@@ -18,12 +18,9 @@ class Message < ActiveRecord::Base
     find(:all, :order => 'created_on DESC', :limit => limit).reverse
   end
 
-  # Creates a system message (not to be saved!)
+  # Creates a system message
   def self.system(message)
-    returning self.new(:system => true, :message => message) do |e|
-      e.created_on = Time.now
-      e.readonly!
-    end
+    self.create! :system => true, :message => message
   end
   
   def self.timestamp
