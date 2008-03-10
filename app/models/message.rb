@@ -51,12 +51,12 @@ class Message < ActiveRecord::Base
   end
   
   # Returns true if this is a system message
-  def system?
-    @system || false
-  end
+  # def system?
+  #   @system || false
+  # end
 
   def notice?
-    @notice || attachment?
+    super || attachment?
   end
   
   def timestamp?

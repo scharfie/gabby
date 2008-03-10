@@ -1,4 +1,5 @@
 class ChatController < ApplicationController
+  skip_before_filter :login_required, :only => [:broadcast]
   def index
   end
 	
@@ -40,6 +41,15 @@ class ChatController < ApplicationController
   end
   
   def broadcast
+    m = params[:message]
+    f = params[:from]
+    if !m.blank? && !f.blank?
+      @message = Message.new(:message => m, :from => f, :created_on => Time.now)
+      render :juggernaut do |page|
+        page.add_message @message
+      end  
+    end
+    
     render :nothing => true, :status => 200
   end
 
