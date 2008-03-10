@@ -36,9 +36,9 @@
   
   <div class="panel">
     <h2>Debug</h2>
-    <%= link_to_remote 'Set to idle', :url => '/gabber/idle' %><br />
-    <%= link_to_remote 'Set to online', :url => '/gabber/online' %><br />
-    <%= link_to_remote 'Set to offline', :url => '/gabber/offline' %><br />
+    <%= link_to_function 'Set to idle', 'Gabber.setIdle();' %><br />
+    <%= link_to_function 'Set to online', 'Gabber.setOnline();' %><br />
+    <%= link_to_function 'Set to offline', 'Gabber.setOffline();' %><br />
   </div>
   
   <div class="panel">

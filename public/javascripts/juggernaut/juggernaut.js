@@ -184,6 +184,7 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
     this.timer = new GabberTimer();
     this.timer.start();
     Gabber.setOnline();
+    GabberWindow.reset();
   }
   
   ,
@@ -191,5 +192,7 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
     $$('tr.u-' + this.options.client_id).each(function(m) {
       m.addClassName('me');
     });
+    
+    GabberWindow.increment();
   }
 });

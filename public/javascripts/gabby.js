@@ -1,25 +1,21 @@
 GabberTimer = function() {
   this.idle = 15; // number of minutes before idle
   this.idle_counter = this.idle;
-  this.is_idle  = false;
   this.timer_id = null;
 }
 
 GabberTimer.prototype = {
   resetIdleStatus: function() {
-    if (this.is_idle) Gabber.setOnline();
-    
+    if (Gabber.isIdle()) Gabber.setOnline();
     this.idle_counter = this.idle;
-    this.is_idle  = false;
   }
   ,
   
   // Called by the timer
   timerCallback: function() {
-    if (!this.is_idle) {
+    if (!Gabber.isIdle()) {
       this.idle_counter--;
       if (this.idle_counter <= 0) {
-        this.is_idle = true;
         Gabber.setIdle();
       } // end if <= 0
     } // end if !idle
@@ -44,14 +40,16 @@ GabberTimer.prototype = {
   }
 };
 
-Gabber = function() {
-}
+Gabber = function() {}
+Gabber.idle = false;
 
 Gabber.setIdle = function() {
+  this.idle = true;
   new Ajax.Request('/gabber/idle');
 }
 
 Gabber.setOnline = function() {
+  this.idle = false;
   new Ajax.Request('/gabber/online');
 }
 
@@ -59,8 +57,13 @@ Gabber.setOffline = function() {
   new Ajax.Request('/gabber/offline');
 }
 
+Gabber.isIdle = function() {
+  return this.idle;
+}
+
 Gabber.names = new Array();
 
+// Name tab completion
 GabberTabCompletion = function(event, textarea) {
   this.event = event;
   this.textarea = textarea;
@@ -123,3 +126,48 @@ GabberTabCompletion.complete = function(event, textarea) {
   var gTC = new GabberTabCompletion(event, textarea);
   return gTC.complete();
 }
+
+GabberWindow = function() {}
+GabberWindow.count   = 0;
+GabberWindow.blurred = false;
+
+GabberWindow.updateTitle = function() {
+  return; // this isn't working yet
+  
+  if ((this.blurred == true || Gabber.isIdle()) && this.count > 0) {
+    document.title = "(" + this.count + ") - gabby"
+  } else {
+    document.title = 'gabby';
+  }
+}
+
+GabberWindow.register = function() {
+    Event.observe(window, 'blur',  this.onFocus.bind(this));
+    Event.observe(window, 'focus', this.onBlur.bind(this));
+  }
+  
+GabberWindow.onFocus = function() {
+  this.blurred = false;
+  this.reset();
+}
+ 
+GabberWindow.onBlur = function() {
+  this.blurred = true;
+  this.reset();
+}
+
+GabberWindow.incrementBy = function(value) {
+  this.count += value;
+  this.updateTitle();
+}
+
+GabberWindow.increment = function() {
+  this.incrementBy(1);
+}
+
+GabberWindow.reset = function() {
+  // what kind of tom-foolery is this?? :-)
+  this.incrementBy(-this.count);
+}
+
+GabberWindow.register();

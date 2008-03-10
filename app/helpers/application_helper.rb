@@ -29,7 +29,7 @@ module ApplicationHelper
     page.add_message user.system('joined the chat')
   end
   
-  def go_away(user=current_user)
+  def go_away(user)
     page["g-#{user.id}"].className = 'idle'
     page.add_message user.system('went away')
   end
