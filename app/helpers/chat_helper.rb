@@ -10,11 +10,11 @@ module ChatHelper
     
     params[:previous_speaker] = nil
     
-    if options[:break]
-      m = timestamp_message
-      out << render(:partial => 'message', :object => m)
-      out << '<script type="text/javascript">this.juggernaut.onMessage();</script>'
-    end
+    # if options[:break]
+      # m = timestamp_message
+      # out << render(:partial => 'message', :object => m)
+      # out << '<script type="text/javascript">this.juggernaut.onMessage();</script>'
+    # end
 
     out
   end
@@ -28,6 +28,8 @@ module ChatHelper
     
     if message.attachment?
       attachment_html(message.attachment)
+    elsif message.timestamp?
+      message.created_on.eztime ':hour12::minute :lmeridian on :nday, :nmonth :day:ordinal, :year'
     else
       m.gsub! /@@([^@]+)@@/, '<code>\1</code>'
       m.gsub! /([A-Z]{3}-\d+)/, 
@@ -61,7 +63,7 @@ module ChatHelper
   def message_class(message)
     classes = []
     classes << "u-#{message.user_id} m-#{message.id}"
-    classes << 'new' if new_speaker?(message)
+    classes << 'new' if new_speaker?(message) || message.needs_timestamp?
     classes << 'sys' if system_message?(message)
     classes << 'notice' if message.notice?
     classes << 'time' if message.timestamp?

@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 2) do
     t.datetime "updated_on"
     t.boolean :system, :default => false
     t.boolean :notice, :default => false
+    t.boolean :timestamp, :default => false
   end
 
   create_table "users", :force => true do |t|

@@ -1,9 +1,9 @@
 class Message < ActiveRecord::Base
+  TIMESTAMP_THRESHOLD = 10.minutes
+  
   class << self
     attr_accessor :last_message_id  
   end
-  
-  attr_accessor :timestamp
   
   belongs_to :user
   belongs_to :asset
@@ -37,11 +37,16 @@ class Message < ActiveRecord::Base
   end
   
   def self.timestamp
-    returning self.new(:system => true, :timestamp => true) do |e|
-      e.created_on = Time.now
-      e.message = e.created_on.eztime(':nday, :nmonth :day:ordinal, :year')
-      e.readonly!
-    end
+    self.create! :system => true, :timestamp => true
+  end
+  
+  def previous
+    @previous ||= self.class.find(:first, :order => 'created_on DESC', 
+     :conditions => ['id < ?', self.id])
+  end
+  
+  def needs_timestamp?
+    (created_on - previous.created_on) >= TIMESTAMP_THRESHOLD
   end
   
   def attachment
@@ -54,29 +59,12 @@ class Message < ActiveRecord::Base
   
   alias_method :attachment?, :has_attachment?
   
-  # def message
-  #   system? ? "- #{self[:message]} -" : self[:message]
-  # end
-  
   # Returns who the message is from
   def from
     super || user.try(:short_name) || (system? ? '' : '(unknown)')
   end
-  
-  # Returns true if this is a system message
-  # def system?
-  #   @system || false
-  # end
 
   def notice?
     super || attachment?
   end
-  
-  def timestamp?
-    @timestamp
-  end
-  
-  # def created_on
-  #   self[:created_on] || Time.now
-  # end
 end

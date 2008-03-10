@@ -6,7 +6,8 @@ class Gabber < ActiveRecord::Base
   belongs_to :user
   
   def self.gabbers
-    find :all, :include => :user
+    find :all, :include => :user, 
+      :conditions => ['gabbers.updated_at >= ?', 1.hour.ago]
   end
   
   def self.grab(user)

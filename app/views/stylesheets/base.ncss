@@ -241,7 +241,7 @@ tr.time td {
   padding-bottom: 5px;
   border-right: none;
   background: none !important;
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-weight: normal;
   color: #777;
 }
