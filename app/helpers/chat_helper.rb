@@ -1,18 +1,13 @@
 module ChatHelper
   def recent_messages(options={})
     out = []
-    for m in Message.recent(5)
+    last_message_id = current_user.last_message_id
+    messages = last_message_id ? Message.since(last_message_id) : Message.recent(15)
+    for m in messages
       out << render(:partial => 'message', :object => m)
       params[:previous_speaker] = m.user_id
     end  
     
-    # system message test
-    # m = Message.system('mguymon left the chat.')
-    # out << render(:partial => 'message', :object => m)
-    # 
-    # m = Message.system('swein joined the chat.')
-    # out << render(:partial => 'message', :object => m)
-
     params[:previous_speaker] = nil
     
     if options[:break]

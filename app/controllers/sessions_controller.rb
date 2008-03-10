@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
     cookies.delete :auth_token
     reset_session
     flash[:notice] = "You have been logged out."
-    logout_of_chat
+    logout_of_chat rescue nil
     redirect_back_or_default('/')
   end
 end

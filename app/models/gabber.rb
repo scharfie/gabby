@@ -24,6 +24,7 @@ class Gabber < ActiveRecord::Base
   def offline!
     self.previous_status = status
     update_attributes :status => GabberStatus::OFFLINE, :message => nil
+    user.update_attribute :last_message_id, Message.last_message_id
   end
   
   def online!

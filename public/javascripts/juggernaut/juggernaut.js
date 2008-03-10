@@ -178,9 +178,9 @@ the first in ' + (this.options.reconnect_intervals || 3) + ' seconds');
   ,
   onConnected: function() {
     var chatter = this;
-    new Ajax.Updater('chat', '/chat/recent', {evalScripts:true});
+    // new Ajax.Updater('chat', '/chat/recent', {evalScripts:true});
     $('chatbox').show();
-    
+    $('logging_in').remove();
     this.timer = new GabberTimer();
     this.timer.start();
     Gabber.setOnline();

@@ -155,6 +155,7 @@ td#body {
 }
 
 td {
+  vertical-align: top;
   background: #fff;
   color: #333;
   font-size: 12px;

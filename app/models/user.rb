@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
 
   has_many :messages
   has_one :gabber
-  
 
   validates_presence_of     :login, :email
   validates_presence_of     :password,                   :if => :password_required?
@@ -121,5 +120,4 @@ public
   def previous_nickname
     previous_nicknames.last
   end
-  
 end

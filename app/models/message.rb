@@ -1,6 +1,8 @@
 class Message < ActiveRecord::Base
-  # attr_accessor :system
-  # attr_accessor :notice
+  class << self
+    attr_accessor :last_message_id  
+  end
+  
   attr_accessor :timestamp
   
   belongs_to :user
@@ -10,12 +12,23 @@ class Message < ActiveRecord::Base
   before_save do |e|
     e[:from] = e.from
   end
+  
+  # Track the last message id
+  after_save do |e|
+    Message.last_message_id = e.id
+  end
 
   ## Class methods
 
   # Returns recent messages
   def self.recent(limit=15)
     find(:all, :order => 'created_on DESC', :limit => limit).reverse
+  end
+  
+  # Returns all messages after given message ID
+  def self.since(last_message_id)
+    find :all, :order => 'created_on ASC',
+      :conditions => ['id >= ?', last_message_id]
   end
 
   # Creates a system message

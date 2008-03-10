@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(:version => 2) do
     t.datetime "updated_at"
     t.string   "remember_token"
     t.datetime "remember_token_expires_at"
+    t.integer :last_message_id
   end
 
 end
