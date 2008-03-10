@@ -19,18 +19,28 @@ module ApplicationHelper
     page << 'document.body.scrollTop = document.body.scrollHeight';
   end
   
+  def gabber(user)
+    page["g-#{user.id}"]
+  end
+  
   def go_offline(user)
-    page["g-#{user.id}"].className = 'offline'
+    # page.gabber(user).visual_effect :fade
+    page.gabber(user).className = 'offline'
     page.add_message user.system('left the chat')
   end
   
   def go_online(user)
-    page["g-#{user.id}"].className = 'online'
+    page << %Q{if ($('g-#{user.id}') == null) \{ 
+      $('gabbers').insert('#{render :partial => 'gabber', :object => user.gabber}'); 
+    \}}
+
+    page.gabber(user).visual_effect :highlight
+    page.gabber(user).className = 'online'
     page.add_message user.system('joined the chat')
   end
   
   def go_away(user)
-    page["g-#{user.id}"].className = 'idle'
+    page.gabber(user).className = 'idle'
     page.add_message user.system('went away')
   end
 end

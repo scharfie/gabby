@@ -116,17 +116,21 @@ div#sidebar {
     list-style: none;
     padding: 0;
     
-    li.idle, li.away {
-      color: #777;  
-    }
+    li {
+      background: #E5E5E5;
     
-    li.online {
-      font-weight: bold;
-    }
+      .idle, .away {
+        color: #777;  
+      }
     
-    li.offline {
-      display: none;
-    }
+      .online {
+        font-weight: bold;
+      }
+    
+      .offline {
+        display: none;
+      }
+    }  
   }
   
   div.panel {

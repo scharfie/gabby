@@ -34,12 +34,14 @@
     </ul>
   </div>
   
+  <% if RAILS_ENV == 'development' %>
   <div class="panel">
     <h2>Debug</h2>
     <%= link_to_function 'Set to idle', 'Gabber.setIdle();' %><br />
     <%= link_to_function 'Set to online', 'Gabber.setOnline();' %><br />
     <%= link_to_function 'Set to offline', 'Gabber.setOffline();' %><br />
   </div>
+  <% end %>
   
   <div class="panel">
     <h2>Upload file</h2>
