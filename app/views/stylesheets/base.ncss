@@ -201,6 +201,7 @@ tr.sys div.from {
 
 td.message {
   padding-left: 15px;
+  vertical-align: middle;
 }
 
 td.time {
