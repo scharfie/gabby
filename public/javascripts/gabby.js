@@ -207,7 +207,7 @@ GabberWindow.onResize = function(event) {
 }
 
 GabberWindow.autoScroll = function() {
-  this.scroller.autoScroll();
+  this.scroller.autoScroll(true);
 }
 
 GabberWindow.register();

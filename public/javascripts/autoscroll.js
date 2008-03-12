@@ -10,9 +10,9 @@ Scroller.prototype = {
   getElementHeight: function() {
     var intHt = 0;
     if (this.element.style.pixelHeight) {
-      intHt = scrollDiv.style.pixelHeight;
+      intHt = this.element.style.pixelHeight;
     } else {
-      intHt = scrollDiv.offsetHeight;
+      intHt = this.element.offsetHeight;
     }
       
     return parseInt(intHt);

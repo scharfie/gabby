@@ -14,11 +14,11 @@ module ApplicationHelper
   
   def add_message(message)
     if message.needs_timestamp?
-      page.insert_html :bottom, 'chat', :partial => 'chat/message',
+      page.insert_html :bottom, 'messages', :partial => 'chat/message',
         :object => timestamp_message
     end
     
-    page.insert_html :bottom, 'chat', :partial => 'chat/message', 
+    page.insert_html :bottom, 'messages', :partial => 'chat/message', 
       :object => message
     page[:previous_speaker].value = message.user_id  
     page.scroll_to_bottom

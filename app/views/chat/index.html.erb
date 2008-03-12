@@ -1,7 +1,7 @@
-<%#= juggernaut(:client_id => current_user.id, :debug => false) %>
+<%= juggernaut(:client_id => current_user.id, :debug => false) %>
 <div id="chatwindow">
   <div id="chat">
-    <table class="chat">
+    <table class="chat" id="messages">
       <%= recent_messages %>
     </table>
   </div>  
@@ -21,6 +21,31 @@
       <%= submit_tag "Add", :style => 'display: none' %>
     </form>
   </div>
+
+  <script type="text/javascript" charset="utf-8">
+    Gabber.names = <%= Gabber.gabbers.map(&:nickname).to_json %>;
+  
+    Event.observe($('message'), 'keypress', function(e) {
+      m = $('message');
+      if (e.keyCode == Event.KEY_RETURN && e.shiftKey == false) {
+        if (m.value == null || m.value == '' || m.value == "\n") {
+          Event.stop(e);
+          return false;
+        }
+      
+        window.juggernaut.timer.resetIdleStatus();
+      
+        $('message').form.onsubmit();
+        Event.stop(e);
+        return false;
+      } else if (e.keyCode == Event.KEY_TAB) {
+        GabberTabCompletion.complete(e, m);
+      } else {
+        // console.log(e);
+      }
+    });
+  </script>  
+  
 <% end %>
 
 <% content_for :sidebar do %>
@@ -56,31 +81,7 @@
 <% end %>
 
 <script type="text/javascript" charset="utf-8">
-  Gabber.names = <%= Gabber.gabbers.map(&:nickname).to_json %>;
-  
-  Event.observe($('message'), 'keypress', function(e) {
-    m = $('message');
-    if (e.keyCode == Event.KEY_RETURN && e.shiftKey == false) {
-      if (m.value == null || m.value == '' || m.value == "\n") {
-        Event.stop(e);
-        return false;
-      }
-      
-      window.juggernaut.timer.resetIdleStatus();
-      
-      $('message').form.onsubmit();
-      Event.stop(e);
-      return false;
-    } else if (e.keyCode == Event.KEY_TAB) {
-      GabberTabCompletion.complete(e, m);
-    } else {
-      // console.log(e);
-    }
-  });
-</script>
-<script type="text/javascript" charset="utf-8">
   $$('tr.u-1').each(function(m) {
     m.addClassName('me');
   });
 </script>
-
