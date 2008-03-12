@@ -1,5 +1,5 @@
 html,body {
-  min-height: 100%;
+  overflow: hidden; /* prevent scroll bar from showing up */
 }
 
 body, h1,h2,h3,h4,h5,h6 {
@@ -22,27 +22,17 @@ h1 {
   font-size: 1em;
 }
 
-#sidebar h2 {
-  margin: 1em 0 0 0;
-  font-size: 1.2em;
-}
-
 #header {
-  background: #226177;
-  background: #4F5E85;
-  background: #558;
-  xbackground: #222 url(/images/bottom-bg.gif) repeat-x bottom left;
-  background: #222;
+  xbackground: #4F5E85;
+  xbackground: #558;
+  background: #242424;
   color: #fff;
   width: 100%;
-  position: fixed;
-  z-index: 100;
   padding: 5px 0;
-  xborder-bottom: solid 2px #777;
-  xpadding-bottom: 10px;
 
   table {
-    height: 22px;
+    margin: 5px 0;
+    xheight: 2px;
   }  
 
   td {
@@ -72,45 +62,59 @@ h1 {
   }
 }
 
-#chatwindow {
-  background: #fff url(/images/right-bg.gif) repeat-y top right;
-  margin-top: 40px;
-  padding: 0;
-  margin-right: 250px;
+td#content {
+  xbackground: #fff;
+  xborder: groove 2px #fff;
+}
 
-  div.chat {
-    padding: 10px 20px 10px 10px;  
+#chatwindow {
+  xbackground: #fff url(/images/right-bg.gif) repeat-y top right;
+  padding: 0;
+  border: solid 1px #f7f7f7;
+  border-top-color: #aaa;
+  border-left-color: #aaa;
+  
+  margin: 10px 10px 0 0;
+  
+  div#chat {
+    padding: 10px 10px 0px 10px;  
+    background: #fff;
+    overflow-y: scroll;
+    border: solid 1px #eee;
+    border-top-color: #aaa;
+    border-left-color: #aaa;
+  }
+
+  table.chat {
   }
 
   div.bottom {
-    background: #e5e5e5 url(/images/bottom-bg.gif) repeat-x top right;
-    padding-bottom: 110px;
+    xbackground: #e5e5e5 url(/images/bottom-bg.gif) repeat-x top right;
+    xpadding-bottom: 10px;
   }
+}
+
+#bottom td {
+  background: #e5e5e5;  
+  height: 100px;
+  padding: 10px;
 }
 
 #chatbox { 
-  height: 90px; 
-  position: fixed;
-  bottom: 00px;
-  left:   00px;
-  right:  245px;
-  padding: 15px 10px 0 10px;
-  background: url(/images/chatbox-bg.png) repeat-x 0 0;
-
   textarea#message {
     width: 100%;
     height: 80px;
+    border: none;
+    xmargin: 10px 0 0 0;
+    padding: 0;
   }
 }
 
-div#sidebar {
-  padding: 35px 10px;
-  width: 225px;
+#sidebar {
+  padding: 0 10px 0 0px;
+  width: 120px;
   background: none;
   vertical-align: top;
-  position: fixed;
-  right: 10px;
-  top: 0;
   
   ul#gabbers {
     list-style: none;
@@ -135,23 +139,25 @@ div#sidebar {
   
   div.panel {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
+ 
   
   h2 {
-    width: 100%;
+    margin: 1em 0 0.5em 0;
     font-size: 1em;
     background: #ddd;
     padding: 3px 5px;
-    margin-bottom: 0.5em;
     border-bottom: solid 1px #ccc;
   }
 }
 
-td#body {
+td#content {
   vertical-align: top;
   padding-left: 10px;
-  background: none;
+  background: #e5e5e5;
+  overflow: scroll;
+  vertical-align: top;
 }
 
 td {
@@ -276,4 +282,8 @@ code {
   background: #efefef;
   padding: 2px 3px;
   border: dotted 1px #ccc;
+}
+
+#logging_in {
+  padding: 10px 0;
 }

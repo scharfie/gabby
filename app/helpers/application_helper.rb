@@ -21,7 +21,11 @@ module ApplicationHelper
     page.insert_html :bottom, 'chat', :partial => 'chat/message', 
       :object => message
     page[:previous_speaker].value = message.user_id  
-    page << 'document.body.scrollTop = document.body.scrollHeight';
+    page.scroll_to_bottom
+  end
+  
+  def scroll_to_bottom
+    page << 'GabberWindow.autoScroll()';
   end
   
   def gabber(user)

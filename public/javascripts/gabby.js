@@ -158,6 +158,7 @@ GabberWindow.register = function() {
     Event.observe(window, 'blur',  this.onFocus.bind(this));
     Event.observe(window, 'focus', this.onBlur.bind(this));
     Event.observe(window, 'resize', this.onResize.bind(this));
+    Event.observe(window, 'load', this.onLoad.bind(this));
   }
   
 GabberWindow.onFocus = function() {
@@ -184,8 +185,29 @@ GabberWindow.reset = function() {
   this.incrementBy(-this.count);
 }
 
+GabberWindow.onLoad = function(event) {
+  this.chat = $('chat');
+  this.content = $('content');
+  this.scroller = new Scroller(this.chat);  
+
+  this.onResize(event);
+}
+
+GabberWindow.scrollToBottom = function(event) {
+  this.chat.scrollTo(0, this.chat.scrollHeight);
+}
+
 GabberWindow.onResize = function(event) {
-  $('chat').style.maxWidth = window.innerWidth - 300 + 'px';
+  //$('chat').style.maxWidth = window.innerWidth - 300 + 'px';
+  //$('container').style.height = '100%';
+  this.content.style.height = window.innerHeight - 160 + 'px';
+  this.chat.style.height = window.innerHeight - 160 + 'px';
+  this.scroller.autoScroll(true);
+  //$('sidebar').update(window.innerHeight);
+}
+
+GabberWindow.autoScroll = function() {
+  this.scroller.autoScroll();
 }
 
 GabberWindow.register();

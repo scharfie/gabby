@@ -1,27 +1,27 @@
-<%= juggernaut(:client_id => current_user.id, :debug => false) %>
+<%#= juggernaut(:client_id => current_user.id, :debug => false) %>
 <div id="chatwindow">
-  <div class="chat">
-    <table id="chat">
+  <div id="chat">
+    <table class="chat">
       <%= recent_messages %>
-      <tr class="" id="logging_in">
-        <td colspan="3" style="padding: 0 5px 5px 5px;">
-          <%= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
-        </td>  
-      </tr>  
     </table>
   </div>  
   <div class="bottom"></div>
 </div>
 
-<div id="chatbox" style="display: none">
-  <%= form_remote_tag(
-        :url => { :action => :new },
-        :complete => "$('message').value = ''", :id => 'chatbox-f' ) %>
-    <%= hidden_field_tag 'previous_speaker' %>
-    <%= text_area_tag( 'message', '', { :rows => 4, :cols => 60, :id => 'message'} ) %>
-    <%= submit_tag "Add", :style => 'display: none' %>
-  </form>
-</div>  
+<% content_for :chatbox do %>
+  <div id="logging_in">
+    <%= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
+  </div>  
+  <div id="chatbox" style="display: none">
+    <%= form_remote_tag(
+          :url => { :action => :new },
+          :complete => "$('message').value = ''", :id => 'chatbox-f' ) %>
+      <%= hidden_field_tag 'previous_speaker' %>
+      <%= text_area_tag( 'message', '', { :rows => 4, :cols => 60, :id => 'message'} ) %>
+      <%= submit_tag "Add", :style => 'display: none' %>
+    </form>
+  </div>
+<% end %>
 
 <% content_for :sidebar do %>
   <div class="panel">
@@ -34,7 +34,7 @@
     </ul>
   </div>
   
-  <% if RAILS_ENV == 'development' %>
+  <% if 1==0#RAILS_ENV == 'development' %>
   <div class="panel">
     <h2>Debug</h2>
     <%= link_to_function 'Set to idle', 'Gabber.setIdle();' %><br />
@@ -78,3 +78,9 @@
     }
   });
 </script>
+<script type="text/javascript" charset="utf-8">
+  $$('tr.u-1').each(function(m) {
+    m.addClassName('me');
+  });
+</script>
+

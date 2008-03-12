@@ -3,32 +3,37 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>gabby</title>
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag :juggernaut, 'gabby' %>
+  <%= javascript_include_tag :juggernaut, 'autoscroll', 'gabby' %>
   <%= stylesheet_link_tag 'base' %>
   <%= stylesheet_link_tag 'session' unless logged_in? %>
 </head>
 <body>
 <% if logged_in? %>
-  <table id="main" style="width: 100%;">
-    <tr>
+  <table id="container" style="width: 100%;">
+    <tr height="0">
       <td colspan="2">
         <%= render :partial => 'layouts/header' %>
       </td>
     </tr>
     <tr>
-      <td id="body">
+      <td id="content">
         <%= yield %>
-        <script type="text/javascript" charset="utf-8">
-          // $$('tr.u-1').each(function(m) {
-          //   m.addClassName('me');
-          // });
-        </script>
       </td>
+      <td id="sidebar">
+        <%= yield :sidebar %>
+      </td>  
     </tr>
+    <tr id="bottom">
+      <td>
+        <%= yield :chatbox %>
+      </td>
+      <td>
+        <!-- Who knows what should go here... -->
+          
+      </td>
+    </tr>      
+    </tr>  
   </table>
-  <div id="sidebar">
-    <%= yield :sidebar %>
-  </div>
 <% else %>  
   <%= yield %>
 <% end %>  
