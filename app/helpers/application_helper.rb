@@ -45,11 +45,16 @@ module ApplicationHelper
       page.add_message user.system('joined the chat')
     else
       page.add_message user.system('came back')
-    end    
+    end
+    page.add_nickname user
   end
   
   def go_away(user)
     page.gabber(user).className = 'idle'
     page.add_message user.system('went away')
+  end
+  
+  def add_nickname(user)
+    page << %Q{Gabber.addNickname("#{user.nickname}");}
   end
 end

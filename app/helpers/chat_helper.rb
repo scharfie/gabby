@@ -35,7 +35,7 @@ module ChatHelper
       m.gsub! /([A-Z]{3}-\d+)/, 
         '<a href="http://issues.igicom.com/browse/\1">\1</a>'
       m =~ /\n/ ? '<pre>' + h(m.chomp) + '</pre>' : auto_link(m)
-    end  
+    end
   end
   
   def attachment_html(attachment)

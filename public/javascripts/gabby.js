@@ -61,6 +61,19 @@ Gabber.isIdle = function() {
   return this.idle;
 }
 
+Gabber.addNickname = function(nick) {
+  Gabber.names.push(nick);
+  Gabber.names = Gabber.names.uniq();
+}
+
+Gabber.updateNickname = function(oldnick, newnick) {
+  Gabber.names = Gabber.names.reject(function (e) {
+    return e == oldnick;
+  });
+  
+  Gabber.addNickname(newnick);
+}
+
 Gabber.names = new Array();
 
 // Name tab completion
@@ -144,6 +157,7 @@ GabberWindow.updateTitle = function() {
 GabberWindow.register = function() {
     Event.observe(window, 'blur',  this.onFocus.bind(this));
     Event.observe(window, 'focus', this.onBlur.bind(this));
+    Event.observe(window, 'resize', this.onResize.bind(this));
   }
   
 GabberWindow.onFocus = function() {
@@ -168,6 +182,10 @@ GabberWindow.increment = function() {
 GabberWindow.reset = function() {
   // what kind of tom-foolery is this?? :-)
   this.incrementBy(-this.count);
+}
+
+GabberWindow.onResize = function(event) {
+  $('chat').style.maxWidth = window.innerWidth - 300 + 'px';
 }
 
 GabberWindow.register();

@@ -2,12 +2,12 @@
 <div id="chatwindow">
   <div class="chat">
     <table id="chat">
+      <%= recent_messages %>
       <tr class="" id="logging_in">
         <td colspan="3" style="padding: 0 5px 5px 5px;">
           <%= image_tag 'spinner.gif', :class => 'glyph' %> <strong>Logging in to chat...</strong>
         </td>  
       </tr>  
-      <%= recent_messages %>
     </table>
   </div>  
   <div class="bottom"></div>
