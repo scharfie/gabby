@@ -30,6 +30,11 @@ class Message < ActiveRecord::Base
     find :all, :order => 'created_on ASC',
       :conditions => ['id >= ?', last_message_id]
   end
+  
+  def self.seen(nickname)
+    find(:all, :order => 'created_on DESC', :limit => 1,
+      :conditions => ['system = ? AND `from` = ?', false, nickname]).first
+  end
 
   # Creates a system message
   def self.system(message)

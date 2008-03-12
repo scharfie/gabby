@@ -9,11 +9,19 @@ class ChatController < ApplicationController
     
     @message = nil
     
-    if message =~ /^\/nick\s+(.*)/i
+    case message
+    when /^\/nick\s+(.*)/i
       prev = current_user.change_nickname!($1.chomp)
       @message = current_user.system 'is the artist formerly known as <span>' + prev + '</span>'
-    elsif message =~ /^\/me\s+(.*)/
+    when /^\/me\s+(.*)/
       @message = current_user.messages.create!(:message => '&bull; ' + $1.chomp)
+    when /^\/seen\s+(.*)/
+      nickname = $1.chomp
+      if seen = Message.seen(nickname)
+        @message = Message.system(nickname + ' was last seen saying:<blockquote>' + seen.message + '</blockquote>')
+      else
+        @message = Message.system(%Q{I haven't seen #{nickname}.})
+      end  
     else
       @message = current_user.messages.create!(:message => message)
     end    
