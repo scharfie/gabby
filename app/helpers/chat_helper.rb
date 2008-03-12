@@ -34,7 +34,7 @@ module ChatHelper
       m.gsub! /@@([^@]+)@@/, '<code>\1</code>'
       m.gsub! /([A-Z]{3}-\d+)/, 
         '<a href="http://issues.igicom.com/browse/\1">\1</a>'
-      m =~ /\n/ ? '<pre>' + m.chomp + '</pre>' : auto_link(m)
+      m =~ /\n/ ? '<pre>' + h(m.chomp) + '</pre>' : auto_link(m)
     end  
   end
   
