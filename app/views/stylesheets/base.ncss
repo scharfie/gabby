@@ -31,15 +31,15 @@ h1 {
   background: #226177;
   background: #4F5E85;
   background: #558;
-  background: #222 url(/images/bottom-bg.gif) repeat-x bottom left;
-  
+  xbackground: #222 url(/images/bottom-bg.gif) repeat-x bottom left;
+  background: #222;
   color: #fff;
   width: 100%;
   position: fixed;
   z-index: 100;
   padding: 5px 0;
   xborder-bottom: solid 2px #777;
-  padding-bottom: 10px;
+  xpadding-bottom: 10px;
 
   table {
     height: 22px;
